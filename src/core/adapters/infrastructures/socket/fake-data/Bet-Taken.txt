@@ -1,0 +1,8 @@
+MESSAGE
+destination:/bettor/4aKBea7hNHTGWCTksWNyHAAiZY3EPd
+content-type:text/plain;charset=UTF-8
+subscription:sub-0
+message-id:dc64224e-fc76-9207-62bb-0e53bfc3b532-128354
+content-length:825
+
+{"game":{"gameId":1025334,"result":-2,"gameIdEncode":"BV9FSA","deckHistory":"221212212222111102222212012210002222220112211","time":1,"status":0},"numOfPlayers":0,"action":"bet","userSession":{"minSide":1,"maxTie":60,"maxBet":300,"minBet":5,"minTie":1,"userName":"ptest1","bankerSide":30,"sid":"4aKBea7hNHTGWCTksWNyHAAiZY3EPd","tie":8,"playerSide":20,"balance":1783.7,"maxSide":30,"commission":5},"text":100,"gameSession":{"bets":{"bet":[{"result":-2,"amount":5,"betOn":2,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":1,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":0,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":3,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":4,"diff":0,"type":"fun","username":"ptest1"}]}}}

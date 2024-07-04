@@ -1,0 +1,7 @@
+SEND
+token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCRVRUT1IiXSwidXNlciI6ImN0ZXN0MTIiLCJzaWQiOiJkb3FnaEVUQVg0NXY2enpaTmRtQ2FGanVvQmYzQmcifQ.RVc8cPb6bSKXwSHR0QjgZzHwEJuRxGilFarqlaTeSjE
+channel:doqghETAX45v6zzZNdmCaFjuoBf3Bg
+destination:/channel/doqghETAX45v6zzZNdmCaFjuoBf3Bg
+content-length:58
+
+{"betOn":"2-1-0-3-4","betAmt":"9-7-8-6-10","action":"bet"}

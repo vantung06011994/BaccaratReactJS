@@ -1,0 +1,46 @@
+import * as React from "react";
+
+import { Link, Redirect, Route, Switch } from "react-router-dom";
+
+import ChatPage from "../pages/chat-page";
+import Demo2Page from "../pages/demo2-page";
+import DemoPage from "../pages/demo-page";
+import GameDemoPage from "../pages/game-demo-page";
+import LogoutPage from "../pages/logout-page";
+import { ROUTE_PATH } from "./route-path";
+import SignIn from "../pages/signIn-page";
+import TodoPage from "../pages/todo-page";
+
+// import DemoPage from "../pages/Demobacktsx";
+
+
+
+const Routes: React.FC = () => {
+    return (
+        <>
+            <ul>
+                <li>
+                    <Link to={ROUTE_PATH.LOGIN.URL}>loginpage</Link>
+                    <Link to={ROUTE_PATH.CHAT.URL}>Chatpage</Link>
+                    <Link to={ROUTE_PATH.DEMO.URL}>Demo</Link>
+                    <Link to={ROUTE_PATH.DEMO2.URL}>Demo2</Link>
+                    <Link to={ROUTE_PATH.TODO.URL}>TODO</Link>
+                    <Link to={ROUTE_PATH.GAME.URL}>Demo GAME PAGE</Link>
+                    <Link to={ROUTE_PATH.LOGOUT.URL}>Logout</Link>
+                </li>
+            </ul>
+            <Switch>
+                <Redirect exact={true} from="/" to={ROUTE_PATH.DEMO.URL} />
+                <Route path={ROUTE_PATH.LOGIN.URL} component={SignIn} />
+                <Route path={ROUTE_PATH.CHAT.URL} component={ChatPage} />
+                <Route path={ROUTE_PATH.DEMO.URL} component={DemoPage} />
+                <Route path={ROUTE_PATH.DEMO2.URL} component={Demo2Page} />
+                <Route path={ROUTE_PATH.TODO.URL} component={TodoPage} />
+                <Route path={ROUTE_PATH.LOGOUT.URL} component={LogoutPage} />
+                <Route path={ROUTE_PATH.GAME.URL} component={GameDemoPage} />
+            </Switch>
+        </>
+    );
+};
+
+export default Routes;

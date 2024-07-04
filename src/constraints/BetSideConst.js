@@ -1,0 +1,68 @@
+import { BET_SIDE_CODE, GAME_RESULT } from "../core/domain/game/GameCodes";
+
+export const betside_options = {
+    panda: {
+        id: "panda",
+        img: "/images/icon/panda.svg",
+        altText: "Panda",
+        textWinner: "",
+        tooltipClassName: "panda-jackpot jackpot jackpot-right tooltip",
+        selectTypeChipClassName: "chip-selected-click panda-chips",
+        numberChipClassName: "panda-number-chips alert-money",
+        isTooltipHelp: true,
+        tooltipHelpText:
+            "<h4>PANDA TO WIN</h4> <p>Player win with score 8</p><p>Player has 3 Cards</p><p>Odd: 1 to win 20</p>",
+        betOn: BET_SIDE_CODE.PANDA, //type number
+    },
+    dragon: {
+        id: "dragon",
+        img: "/images/icon/dragon.svg",
+        altText: "Dragon",
+        textWinner: "",
+        tooltipClassName: "dragon-jackpot jackpot jackpot-left tooltip",
+        selectTypeChipClassName: "chip-selected-click dragon-chips",
+        numberChipClassName: "dragon-number-chips alert-money",
+        isTooltipHelp: true,
+        tooltipHelpText:
+            "<h4>DRAGON TO WIN</h4><p>Banker win with score 7</p><p>Banker has 3 Cards</p><p>Odd: 1 to win 30</p>",
+        betOn: BET_SIDE_CODE.DRAGON,
+    },
+    player: {
+        id: "player",
+        altText: "Player",
+        textWinner: "Player Wins",
+        tooltipClassName: "player tooltip float-right",
+        selectTypeChipClassName: "chip-selected-click player-chips",
+        numberChipClassName: "player-number-chips alert-money",
+        isTooltipHelp: false,
+        tooltipHelpText: "",
+        betOn: BET_SIDE_CODE.PLAYER,
+        displayTextWinnerBy: GAME_RESULT.PLAYER_WIN,
+    },
+    tie: {
+        id: "tie",
+        img: "",
+        altText: "Tie",
+        textWinner: "Tie!",
+        tooltipClassName: "tie tooltip ",
+        selectTypeChipClassName: "chip-selected-click tie-chips",
+        numberChipClassName: "tie-number-chips alert-money",
+        isTooltipHelp: false,
+        tooltipHelpText: "",
+        betOn: BET_SIDE_CODE.TIE,
+        displayTextWinnerBy: GAME_RESULT.TIE_WIN,
+    },
+    banker: {
+        id: "banker",
+        img: "",
+        altText: "Banker",
+        textWinner: "Banker Wins",
+        tooltipClassName: "bank tooltip float-left",
+        selectTypeChipClassName: "chip-selected-click bank-chips",
+        numberChipClassName: "bank-number-chips alert-money",
+        isTooltipHelp: false,
+        tooltipHelpText: "",
+        betOn: BET_SIDE_CODE.BANKER,
+        displayTextWinnerBy: GAME_RESULT.BANKER_WIN,
+    },
+};

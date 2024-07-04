@@ -1,0 +1,6157 @@
+/*Animation Set*/
+.fade-in {
+    animation: up 0.5s ease-in;
+}
+
+.zoom-in {
+    animation: zoom-in 0.5s ease-in;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translate(0, -2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*import css*/
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs169vgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9ogUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "mycasino";
+    src: url("../font/mycasino.eot?29231763");
+    src: url("../font/mycasino.eot?29231763#iefix") format("embedded-opentype"),
+        url("../font/mycasino.woff2?29231763") format("woff2"), url("../font/mycasino.woff?29231763") format("woff"),
+        url("../font/mycasino.ttf?29231763") format("truetype"),
+        url("../font/mycasino.svg?29231763#mycasino") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'mycasino';
+    src: url('../font/mycasino.svg?29231763#mycasino') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "mycasino";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+    content: "\e800";
+} /* '' */
+.icon-heart-circled:before {
+    content: "\e801";
+} /* '' */
+.icon-mail:before {
+    content: "\e802";
+} /* '' */
+.icon-videocam:before {
+    content: "\e803";
+} /* '' */
+.icon-th-large:before {
+    content: "\e804";
+} /* '' */
+.icon-ok:before {
+    content: "\e805";
+} /* '' */
+.icon-ok-circled:before {
+    content: "\e806";
+} /* '' */
+.icon-ok-circled2:before {
+    content: "\e807";
+} /* '' */
+.icon-cancel:before {
+    content: "\e808";
+} /* '' */
+.icon-cancel-circled:before {
+    content: "\e809";
+} /* '' */
+.icon-cancel-circled2:before {
+    content: "\e80a";
+} /* '' */
+.icon-plus:before {
+    content: "\e80b";
+} /* '' */
+.icon-plus-circled:before {
+    content: "\e80c";
+} /* '' */
+.icon-minus:before {
+    content: "\e80d";
+} /* '' */
+.icon-minus-circled:before {
+    content: "\e80e";
+} /* '' */
+.icon-help-circled:before {
+    content: "\e80f";
+} /* '' */
+.icon-info-circled:before {
+    content: "\e810";
+} /* '' */
+.icon-bookmark:before {
+    content: "\e811";
+} /* '' */
+.icon-bookmark-empty:before {
+    content: "\e812";
+} /* '' */
+.icon-warning:before {
+    content: "\e813";
+} /* '' */
+.icon-exclamation:before {
+    content: "\e814";
+} /* '' */
+.icon-cog:before {
+    content: "\e815";
+} /* '' */
+.icon-wrench:before {
+    content: "\e816";
+} /* '' */
+.icon-wrench-circled:before {
+    content: "\e817";
+} /* '' */
+.icon-cog-circled:before {
+    content: "\e818";
+} /* '' */
+.icon-volume-off:before {
+    content: "\e819";
+} /* '' */
+.icon-volume:before {
+    content: "\e81a";
+} /* '' */
+.icon-th-list:before {
+    content: "\e81b";
+} /* '' */
+.icon-play:before {
+    content: "\e81c";
+} /* '' */
+.icon-play-circled2:before {
+    content: "\e81d";
+} /* '' */
+.icon-down-open:before {
+    content: "\e81e";
+} /* '' */
+.icon-left-open:before {
+    content: "\e81f";
+} /* '' */
+.icon-right-open:before {
+    content: "\e820";
+} /* '' */
+.icon-up-open:before {
+    content: "\e821";
+} /* '' */
+.icon-play-circled:before {
+    content: "\e822";
+} /* '' */
+.icon-stop:before {
+    content: "\e823";
+} /* '' */
+.icon-stop-circled:before {
+    content: "\e824";
+} /* '' */
+.icon-pause:before {
+    content: "\e825";
+} /* '' */
+.icon-pause-circled:before {
+    content: "\e826";
+} /* '' */
+.icon-resize-full-alt:before {
+    content: "\e827";
+} /* '' */
+.icon-resize-full:before {
+    content: "\e828";
+} /* '' */
+.icon-adjust:before {
+    content: "\e829";
+} /* '' */
+.icon-tint:before {
+    content: "\e82a";
+} /* '' */
+.icon-star-circled:before {
+    content: "\e82b";
+} /* '' */
+.icon-star:before {
+    content: "\e82c";
+} /* '' */
+.icon-heart-empty:before {
+    content: "\e82d";
+} /* '' */
+.icon-star-empty:before {
+    content: "\e82e";
+} /* '' */
+.icon-picture:before {
+    content: "\e82f";
+} /* '' */
+.icon-video-chat:before {
+    content: "\e830";
+} /* '' */
+.icon-eye:before {
+    content: "\e831";
+} /* '' */
+.icon-book:before {
+    content: "\e832";
+} /* '' */
+.icon-calendar:before {
+    content: "\e833";
+} /* '' */
+.icon-export:before {
+    content: "\e834";
+} /* '' */
+.icon-home-circled:before {
+    content: "\e835";
+} /* '' */
+.icon-comment:before {
+    content: "\e836";
+} /* '' */
+.icon-comment-alt:before {
+    content: "\e837";
+} /* '' */
+.icon-move:before {
+    content: "\e838";
+} /* '' */
+.icon-arrows-cw:before {
+    content: "\e839";
+} /* '' */
+.icon-cw-circled:before {
+    content: "\e83a";
+} /* '' */
+.icon-cw:before {
+    content: "\e83b";
+} /* '' */
+.icon-target:before {
+    content: "\e83c";
+} /* '' */
+.icon-window-maximize:before {
+    content: "\f2d0";
+} /* '' */
+.icon-window-minimize:before {
+    content: "\f2d1";
+} /* '' */
+.icon-window-close:before {
+    content: "\f2d3";
+} /* '' */
+/*responsive variables */
+/*variables*/
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.cards {
+    margin-bottom: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000319;
+        }
+    }
+    .cards {
+        margin-bottom: 6rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000319;
+        }
+    }
+    .cards {
+        margin-bottom: 5rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000319;
+        }
+    }
+    .cards {
+        margin-bottom: 3.5rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000327;
+    }
+}
+.cards .card {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    width: 60px;
+    height: 80px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    background: #fff;
+    display: inline-block;
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000327;
+        }
+    }
+    .cards .card {
+        width: 46.1538461538px;
+        height: 61.5384615385px;
+        margin: 0.3rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000327;
+        }
+    }
+    .cards .card {
+        width: 40px;
+        height: 53.3333333333px;
+        margin: 0.3rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000386;
+    }
+}
+.cards .card .diamonds .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000386;
+        }
+    }
+    .cards .card .diamonds .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000386;
+        }
+    }
+    .cards .card .diamonds .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000386;
+        }
+    }
+    .cards .card .diamonds .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000390;
+    }
+}
+.cards .card .diamonds .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQwLjczMSA0MC43MzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwLjczMSA0MC43MzE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz4KCTxwYXRoIGQ9Ik0zNy43NjEsMTkuODMzYzAuMTE0LDAuMTY0LDAuMTg0LDAuMzYzLDAuMTg0LDAuNTc4YzAsMC40MzEtMC4yNzEsMC43OTctMC42NTMsMC45MzggICBjLTEuNTQ2LDEuMDk2LTkuODIsNy4zMDctMTYuMDE2LDE4LjczM2MtMC4xMjIsMC4zMDQtMC4zNzgsMC41NDgtMC43LDAuNjIxYy0wLjA4NCwwLjAyMS0wLjE2OCwwLjAyNy0wLjI1MiwwLjAyNyAgIGMtMC4zMzksMC0wLjY1Ni0wLjE1Ni0wLjgzMi0wLjQ1M2MtMC4wNDctMC4wNy0wLjA4NC0wLjE0Ni0wLjExMi0wLjIyOGMtMC44MDQtMS41Ni02LjEzMi0xMS40MjItMTUuOTg0LTE4Ljc1NiAgIGMtMC4zNTgtMC4xNTItMC42MDgtMC41MDctMC42MDgtMC45MjFjMC0wLjAwOCwwLTAuMDE2LDAtMC4wMjJjLTAuMDA0LTAuMTksMC4wNDUtMC4zODEsMC4xNDktMC41NDkgICBjMC4xMTgtMC4xOSwwLjI5NS0wLjMzMywwLjQ5OS0wLjQxYzEuMjc5LTAuODk0LDkuNjQ5LTcuMDIyLDE1Ljk2NS0xOC42MTJDMTkuNDk5LDAuMzM0LDE5Ljg5OSwwLDIwLjM3NiwwICAgYzAuMTk2LDAsMC4zNzksMC4wNTcsMC41MzMsMC4xNTRjMC4yMTMsMC4xMiwwLjM3NiwwLjMxNiwwLjQ1NSwwLjU1M2MwLjYxMywxLjIwOSw1LjkzOCwxMS4zMTgsMTYuMDQsMTguODAyICAgQzM3LjU0OCwxOS41ODcsMzcuNjcyLDE5LjY5OCwzNy43NjEsMTkuODMzeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkYwMDAwIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000390;
+        }
+    }
+    .cards .card .diamonds .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000390;
+        }
+    }
+    .cards .card .diamonds .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000397;
+    }
+}
+.cards .card .hearts .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000397;
+        }
+    }
+    .cards .card .hearts .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000397;
+        }
+    }
+    .cards .card .hearts .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000397;
+        }
+    }
+    .cards .card .hearts .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003101;
+    }
+}
+.cards .card .hearts .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIC0yMSA0NDggNDQ4IiB3aWR0aD0iNTEyIj48Zz48cGF0aCBkPSJtMjI0IDQwNi45MDIzNDRjMjkuMzgyODEyLTE2LjIxNDg0NCAyMjQtMTI5LjQ5NjA5NCAyMjQtMjgyLjkwMjM0NCAwLTY2LjA1NDY4OC01NC4xOTkyMTktMTI0LTExNi0xMjQtNDEuODY3MTg4LjA3NDIxODgtODAuNDYwOTM4IDIyLjY2MDE1Ni0xMDEuMDMxMjUgNTkuMTI4OTA2LTEuNTM5MDYyIDIuMzUxNTYzLTQuMTYwMTU2IDMuNzY1NjI1LTYuOTY4NzUgMy43NjU2MjVzLTUuNDI5Njg4LTEuNDE0MDYyLTYuOTY4NzUtMy43NjU2MjVjLTIwLjU3MDMxMi0zNi40Njg3NS01OS4xNjQwNjItNTkuMDU0Njg3Mi0xMDEuMDMxMjUtNTkuMTI4OTA2LTYxLjgwMDc4MSAwLTExNiA1Ny45NDUzMTItMTE2IDEyNCAwIDE1My40MDYyNSAxOTQuNjE3MTg4IDI2Ni42ODc1IDIyNCAyODIuOTAyMzQ0em0wIDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiIHN0eWxlPSJmaWxsOiNGRjJBMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003101;
+        }
+    }
+    .cards .card .hearts .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003101;
+        }
+    }
+    .cards .card .hearts .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003108;
+    }
+}
+.cards .card .spades .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003108;
+        }
+    }
+    .cards .card .spades .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003108;
+        }
+    }
+    .cards .card .spades .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003108;
+        }
+    }
+    .cards .card .spades .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003112;
+    }
+}
+.cards .card .spades .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzQ5LjQ2OCAzNDkuNDY4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDkuNDY4IDM0OS40Njg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzI4LjI5NiwxODIuMzNjMC4zMTgtNTAuMjUxLTM3LjI3OC03NC43Ni03MC40NjYtOTYuMzY4bC0wLjM5Ni0wLjI1OGMtNy4yNDItNC43MzUtMTQuMDY5LTkuMjExLTIwLjExNi0xMy43MTggICAgYy0yOC45NDMtMjEuNjkyLTU0LjI3Ny01NS42MzQtNTcuMjM4LTY3LjkyYy0wLjU5Ny0yLjM5OS0yLjY3NS0zLjk4NC01LjQzMS00LjA2NWMtMS45NTUsMC4xNTktNC4yMTMsMS40NDQtNC44ODIsMy45MDMgICAgYy0zLjM3NSwxMi4yMDItMjUuNDg3LDQ1LjE3MS01Ny40NDgsNjcuMzMyYy01LjEwNCwzLjU0OS0xMC42MDIsNy4wMTctMTYuOTU1LDExLjAzN2MtMzMuMjA0LDIxLjAyMy03NC41MzUsNDcuMjAxLTc0LjE5Miw5OS40MjEgICAgYzAuNDExLDY0LjYxMSwzOS43MDMsOTQuMDIyLDc2LjAyMSw5NC4wMjJjMjMuNjI5LDAsNDYuNjIxLTExLjYyNSw2My41ODUtMzIuMDQxYy03LjMxNywzNS4wMzItMjkuNjE5LDc4LjU3Mi05My4wNTcsOTUuMzIgICAgYy0yLjU2NCwwLjY4NS00LjI0NSwzLjIwNi0zLjkzLDUuODQzYzAuMzUxLDIuNjQyLDIuNjMsNC42Myw1LjMwNSw0LjYzaDIxMS4zNjZjMi45NTQsMCw1LjMyNi0yLjM3OSw1LjMyNi01LjMyNiAgICBjMC0yLjU4Mi0xLjkxLTQuOTE4LTQuMDk2LTUuMTcxYy0yLjc4LTAuODQxLTY3LjI2LTIwLjk3NS04OS40NzgtOTMuNTQyYzE2LjgwMiwxNy43NTYsMzguOTc4LDI3Ljg2MSw2MS40MDUsMjcuODggICAgQzI5MC41MDgsMjczLjMwOSwzMjcuODY5LDI0NS4xNywzMjguMjk2LDE4Mi4zM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003112;
+        }
+    }
+    .cards .card .spades .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003112;
+        }
+    }
+    .cards .card .spades .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003119;
+    }
+}
+.cards .card .clubs .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003119;
+        }
+    }
+    .cards .card .clubs .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003119;
+        }
+    }
+    .cards .card .clubs .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003119;
+        }
+    }
+    .cards .card .clubs .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003123;
+    }
+}
+.cards .card .clubs .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzQ3LjM4OSAzNDcuMzg5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDcuMzg5IDM0Ny4zODk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQ3LjM4OSwxODkuMDE2YzAtNDcuNzY1LTM5LjU4My04Ny4xOTgtODguNDItODguMzE4YzAuNTc2LTQuMDgzLDAuODgzLTguMjMyLDAuODgzLTEyLjM0NiAgICBjMC00OC43MTctNDAuNjEtODguMzM3LTkwLjU0MS04OC4zMzdjLTQ5LjkxOCwwLTkwLjUyLDM5LjYyLTkwLjUyLDg4LjMzN2MwLDUuNzk3LDAuNTg1LDExLjU4OSwxLjcyOSwxNy4yNTggICAgQzM1LjMwMiwxMTAuNDY3LDAsMTQ4Ljg1NSwwLDE5My4zODdjMCw0OC43MDUsNDAuNjIsODguMzM3LDkwLjU0OSw4OC4zMzdjMjcuMTYsMCw1My4xNjQtMTIuMTE3LDcwLjIzOC0zMi41NDYgICAgYy03LjE1MiwzMi4xNDQtMjguNDYzLDcyLjE4OS04OC4zMzMsODcuOTg4bC0yLjQ5MiwwLjY2NmwxLjI2Nyw5LjU0MmgyMDYuNDY5bDEuMTE3LTkuNjI2bC0yLjUxLTAuNTgyICAgIGMtMi43MDgtMC42NjYtNjUuNzE3LTE2LjkxNi04Ni4wMTMtODguMjUyYzE2LjkzNCwxNy44Nyw0MS41NDcsMjguNDI2LDY2LjU2OCwyOC40MjYgICAgQzMwNi43NzMsMjc3LjM0LDM0Ny4zODksMjM3LjcyNywzNDcuMzg5LDE4OS4wMTZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003123;
+        }
+    }
+    .cards .card .clubs .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003123;
+        }
+    }
+    .cards .card .clubs .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003130;
+    }
+}
+.cards .card-l-result,
+.cards .card-r-result {
+    position: absolute;
+    top: -2.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f49303;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003139;
+    }
+}
+.cards .card-r-result {
+    left: 1rem;
+    text-align: left;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003144;
+    }
+}
+.cards .card-rotate-r {
+    transform: rotate(90deg);
+    margin-left: 1rem;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003149;
+    }
+}
+.cards .card-rotate-l {
+    transform: rotate(-90deg);
+    margin-right: 1rem;
+}
+
+/*# sourceMappingURL=deck.css.map */
+
+/*responsive variables */
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000325;
+    }
+}
+.chip {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    border-radius: 50%;
+    border: 0.8rem dashed rgba(255, 255, 255, 0.95);
+    position: relative;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000325;
+        }
+    }
+    .chip {
+        border: 0.6666666667rem dashed rgba(255, 255, 255, 0.95);
+        width: 66.6666666667px;
+        height: 66.6666666667px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000325;
+        }
+    }
+    .chip {
+        border: 0.5333333333rem dashed rgba(255, 255, 255, 0.95);
+        width: 53.3333333333px;
+        height: 53.3333333333px;
+        margin: 0.5333333333rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000351;
+    }
+}
+.chip .value {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 2px dotted white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000351;
+        }
+    }
+    .chip .value {
+        width: 31.6666666667px;
+        height: 31.6666666667px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000365;
+    }
+}
+.chip .value .data-value {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 35px;
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000365;
+        }
+    }
+    .chip .value .data-value {
+        width: 20px;
+        height: 20px;
+        font-size: 0.625rem;
+        line-height: 15px;
+    }
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000389;
+    }
+}
+.chip-selected {
+    width: 40px;
+    height: 40px;
+    margin: 0.4rem;
+    border: 0.4rem dashed rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+@media only screen and (max-width: 560px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000389;
+        }
+    }
+    .chip-selected {
+        bottom: -30%;
+        right: -30%;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003105;
+    }
+}
+.chip-selected .value {
+    width: 25px;
+    height: 25px;
+    border: 1px dotted white;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003110;
+    }
+}
+.chip-selected .value .data-value {
+    width: 20px;
+    height: 20px;
+    font-size: 0.625rem;
+    line-height: 15px;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003124;
+    }
+}
+.pos-1 {
+    right: 4%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003127;
+    }
+}
+.pos-2 {
+    right: 8%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003130;
+    }
+}
+.pos-3 {
+    right: 16%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003133;
+    }
+}
+.pos-4 {
+    right: 24%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003136;
+    }
+}
+.pos-5 {
+    right: 32%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003141;
+    }
+}
+.chip-1 {
+    background: radial-gradient(circle, #2c81d6 0%, #42c3ff 80%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003148;
+    }
+}
+.chip-1 .value .data-value {
+    border: 3px solid #42c3ff;
+    color: #42c3ff;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-1:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003158;
+    }
+}
+.chip-5 {
+    background: radial-gradient(circle, #ec6900 0%, #fa7f1d 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003165;
+    }
+}
+.chip-5 .value .data-value {
+    border: 3px solid #ec6900;
+    color: #ec6900;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-5:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003174;
+    }
+}
+.chip-25 {
+    background: radial-gradient(circle, #45cc71 0%, #2d874b 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003181;
+    }
+}
+.chip-25 .value .data-value {
+    border: 3px solid #45cc71;
+    color: #45cc71;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-25:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003190;
+    }
+}
+.chip-100 {
+    background: radial-gradient(circle, #666 0%, #131313 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003197;
+    }
+}
+.chip-100 .value .data-value {
+    border: 3px solid #666;
+    color: #666;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-100:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003206;
+    }
+}
+.chip-500 {
+    background: radial-gradient(circle, #a75ac6 0%, #6d3b81 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003213;
+    }
+}
+.chip-500 .value .data-value {
+    border: 3px solid #a75ac6;
+    color: #a75ac6;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-500:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \00003259;
+        }
+    }
+    .desktop-chip {
+        display: none !important;
+    }
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003268;
+    }
+}
+.chips-menu {
+    position: absolute;
+    bottom: 27%;
+    width: 100%;
+    transform: scale(0.9);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003275;
+    }
+}
+.chips-menu .menu-toggler {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 33px;
+    height: 33px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003282;
+    }
+}
+.chips-menu .menu-toggler:hover + label,
+.chips-menu .menu-toggler:hover + label:before,
+.chips-menu .menu-toggler:hover + label:after {
+    background: white;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003290;
+    }
+}
+.chips-menu .menu-toggler:checked + label {
+    background: transparent;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003294;
+    }
+}
+.chips-menu .menu-toggler:checked + label:before,
+.chips-menu .menu-toggler:checked + label:after {
+    top: 0;
+    width: 33px;
+    transform-origin: 50% 50%;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003301;
+    }
+}
+.chips-menu .menu-toggler:checked + label:before {
+    transform: rotate(45deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003305;
+    }
+}
+.chips-menu .menu-toggler:checked + label:after {
+    transform: rotate(-45deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003311;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item {
+    opacity: 1;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+    transform: rotate(0deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+    transform: rotate(45deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+    transform: rotate(90deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+    transform: rotate(135deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+    transform: rotate(180deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003321;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item div {
+    pointer-events: auto;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003326;
+    }
+}
+.chips-menu .menu-toggler + label {
+    width: 33px;
+    height: 4.125px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.0625px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003330;
+    }
+}
+.chips-menu .menu-toggler + label:before,
+.chips-menu .menu-toggler + label:after {
+    width: 33px;
+    height: 4.125px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.0625px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003338;
+    }
+}
+.chips-menu .menu-toggler + label:before {
+    top: 8.25px;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003342;
+    }
+}
+.chips-menu .menu-toggler + label:after {
+    top: -8.25px;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(1) .chip {
+    transform: rotate(0deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(2) .chip {
+    transform: rotate(-45deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(3) .chip {
+    transform: rotate(-90deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(4) .chip {
+    transform: rotate(-135deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(5) .chip {
+    transform: rotate(-180deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003353;
+    }
+}
+.chips-menu .menu-item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003360;
+    }
+}
+.chips-menu .menu-item .chip {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: 0.2rem dashed rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    position: inherit;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003367;
+    }
+}
+.chips-menu .menu-item .chip .value {
+    width: 26.6666666667px;
+    height: 26.6666666667px;
+    border: 1px dotted white;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003371;
+    }
+}
+.chips-menu .menu-item .chip .value .data-value {
+    width: 26.6666666667px;
+    height: 26.6666666667px;
+    font-size: 0.8333333333rem;
+    line-height: 23px;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003382;
+    }
+}
+.chips-menu .menu-item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003390;
+    }
+}
+.chips-menu .menu-item a:hover {
+    box-shadow: 0 0 0 0.6666666667px rgba(255, 255, 255, 0.3);
+}
+
+/*# sourceMappingURL=chips.css.map */
+
+/*Animation Set*/
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/anis\.scss;
+    }
+    line {
+        font-family: \000033;
+    }
+}
+.fade-in {
+    animation: up 0.5s ease-in;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/anis\.scss;
+    }
+    line {
+        font-family: \000037;
+    }
+}
+.zoom-in {
+    animation: zoom-in 0.5s ease-in;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translate(0, -2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*# sourceMappingURL=anis.css.map */
+
+/****************
+Tablet
+*****************/
+/*iPad 2019*/
+/* @media only screen and (min-device-width: 810px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss}line{font-family:\0000311}}
+  .portrait {
+    display: flex !important; } } */
+/************
+Mobiles
+*************/
+/*iPhone 4 y 4S: 320 x 480*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000325;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*iPhone 5 y 5S: 320 x 568*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000334;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Apple iPhone 7, iPhone 8 375 x 667*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000344;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*iPhone X: 375 x 812*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000353;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Apple iPhone 6+, 6s+, 7+, 8+ 414 x 736*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000362;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Nexus 4: 384 x 598*/
+@media only screen and (min-device-width: 384px) and (max-device-width: 598px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000371;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Nexus 5: 360 x 598*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 598px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000380;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Galaxy S3, S4, S5: 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000389;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*LG G3 G4 G5 | Samsung Galaxy  360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \0000398;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Samsung Galaxy S5 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \00003107;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*HTC One: 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \00003116;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Samsung Galaxy S 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \00003125;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Samsung Galaxy Nexus*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \00003135;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+/*Samsung Galaxy S8+*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/devices\.scss;
+        }
+        line {
+            font-family: \00003144;
+        }
+    }
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*# sourceMappingURL=devices.css.map */
+
+/*reset css*/
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+ol[class],
+ul[class] {
+    padding: 0;
+}
+
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+ol[class],
+p,
+ul[class] {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ol[class],
+ul[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*sass variables */
+/*responsive variables */
+/*primary classes */
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: #175355;
+    background: radial-gradient(ellipse at center, #175355 10%, #0a3139 70%);
+    font-weight: 300;
+}
+
+body div,
+body span,
+body p {
+    transition: all 0.25s ease;
+    color: #fff;
+}
+
+h1,
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 560px) {
+    h1,
+    h2 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    h1,
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
+
+sup {
+    margin-top: -50%;
+    position: absolute;
+    font-size: 70%;
+}
+
+/* structure css */
+/*cols*/
+.col {
+    float: left;
+    position: relative;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-12 {
+    width: 12.5%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-33 {
+    width: 33.3%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-75 {
+    width: 75%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/*floats*/
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+/*displays*/
+.d-none,
+.mobile {
+    display: none !important;
+}
+
+.desktop {
+    display: block !important;
+}
+
+@media only screen and (max-width: 960px) {
+    .mobile {
+        display: block !important;
+    }
+    .desktop {
+        display: none !important;
+    }
+}
+
+/*aligns*/
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/*padding and margin*/
+.p-all {
+    padding: 1rem;
+}
+
+.p-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-y {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.m-y {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*font-color*/
+.text-base {
+    color: #fff;
+}
+
+.text-primary {
+    color: #3fe8d5;
+}
+
+.text-secondary {
+    color: #f49303;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+.portrait,
+.landscape {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.portrait img,
+.landscape img {
+    max-width: 150px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.full-container {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    position: fixed;
+    background-image: url(../images/texture.png);
+    top: 0;
+    left: 0;
+    /* top menu */
+    /*box */
+    /* video streaming */
+    /* game container */
+}
+@media only screen and (max-width: 768px) {
+    .full-container {
+        min-height: auto;
+    }
+}
+.full-container .text-alerts {
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .text-alerts {
+        top: -50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .text-alerts {
+        top: -180%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .text-alerts {
+        top: -220%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .full-container .text-alerts {
+        top: -180%;
+    }
+}
+.full-container .text-alerts .d-text {
+    background: #f19e27;
+    background: linear-gradient(to bottom, #f19e27 0%, #754a12 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(240, 160, 40, 0.5);
+    display: block;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media only screen and (max-width: 1620px) {
+    .full-container .text-alerts .d-text {
+        font-size: 3.33333rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .text-alerts .d-text {
+        font-size: 2.5rem;
+    }
+}
+.full-container .top-menu {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+@media only screen and (max-width: 560px) {
+    .full-container .top-menu {
+        padding-top: 0;
+    }
+}
+.full-container .top-menu ul li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.full-container .top-menu ul li a {
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 960px) {
+    .full-container .top-menu .balance-amount h2 {
+        padding: 0.5rem 0 0 0.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+.full-container .top-menu .menu-panel {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    right: 0;
+    z-index: 1010;
+    /* width: 20%; */
+    text-align: end;
+    padding: 2.5%;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+.full-container .top-menu .menu-panel ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+.full-container .top-menu .menu-panel ul li {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+.full-container .top-menu .menu-panel ul li:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.full-container .top-menu .menu-panel ul li:last-child {
+    border: 0;
+}
+@media only screen and (max-width: 1024px) {
+    .full-container .top-menu .menu-panel {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .top-menu .menu-panel {
+        width: 50%;
+    }
+}
+.full-container .box {
+    background: #37937d;
+    background: linear-gradient(to bottom, #37937d 0%, #1f7374 100%);
+    border-radius: 0.5rem;
+}
+.full-container .box .box-title {
+    background: #072932;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+.full-container .box .box-body {
+    padding: 1rem;
+}
+.full-container .box ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+.full-container .box ul li {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+.full-container .box ul li:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.full-container .box ul li:last-child {
+    border: 0;
+}
+.full-container .jackpot-instruction .box-body .col-75 {
+    max-height: 80px;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 960px) {
+    .full-container .panels .col-50,
+    .full-container .panels .col-75 {
+        width: 100%;
+    }
+}
+.full-container .video {
+    position: relative;
+}
+.full-container .video .video-container {
+    position: relative;
+}
+.full-container .video .video-container video {
+    width: 100%;
+    height: auto;
+    border: 2px solid rgba(63, 232, 213, 0.1);
+    border-radius: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .full-container .video {
+        padding: 1rem 0 !important;
+        margin-bottom: 1rem;
+    }
+}
+.full-container .video .full-screen {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.full-container .video .dealer {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    max-width: 50px;
+    cursor: pointer;
+}
+.full-container .video .dealer img {
+    width: 100%;
+    display: block;
+}
+.full-container .video .dealer span {
+    display: block;
+    font-size: 0.825rem;
+    text-shadow: 0 2px 0 #000;
+}
+.full-container .video .dealer .profile-panel {
+    display: none;
+    position: absolute;
+    width: 150px;
+    background: #072932;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 1010;
+}
+@media only screen and (max-width: 768px) {
+    .full-container .video .dealer .profile-panel {
+        bottom: -50%;
+    }
+}
+.full-container .video .dealer .profile-panel img {
+    width: 100%;
+    display: inline-block;
+    margin: 1rem 0;
+}
+.full-container .video .dealer .profile-panel input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0;
+    margin: 0.25rem;
+}
+.full-container .video .dealer .profile-panel .submit {
+    background: #3fe8d5;
+    font-weight: bold;
+}
+@media only screen and (max-width: 960px) {
+    .full-container .video .game-id h2 {
+        padding: 1rem 0 0 1rem;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+    }
+}
+.full-container .game-container {
+    position: absolute;
+    bottom: 2.5%;
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container {
+        bottom: 10%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container {
+        bottom: 12%;
+    }
+}
+.full-container .game-container .progress-text {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    margin-left: -25%;
+}
+.full-container .game-container .player-choose {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto 1%;
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+.full-container .game-container .player-choose .bank,
+.full-container .game-container .player-choose .tie,
+.full-container .game-container .player-choose .player {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(250, 250, 250, 0.1);
+    margin: 0.5rem;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(250, 250, 250, 0.1);
+    opacity: 0.8;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #ccc;
+    text-align: center;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 76.92308px;
+        height: 76.92308px;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 66.66667px;
+        height: 66.66667px;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 58.82353px;
+        height: 58.82353px;
+        font-size: 0.8rem;
+    }
+}
+.full-container .game-container .player-choose .bank:before,
+.full-container .game-container .player-choose .tie:before,
+.full-container .game-container .player-choose .player:before {
+    content: "";
+    background: black;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    position: absolute;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    z-index: -1;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 91.92308px;
+        height: 91.92308px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 81.66667px;
+        height: 81.66667px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 78.82353px;
+        height: 78.82353px;
+    }
+}
+.full-container .game-container .player-choose .bank .d-text,
+.full-container .game-container .player-choose .tie .d-text,
+.full-container .game-container .player-choose .player .d-text {
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    z-index: 1010;
+    background: #f19e27;
+    background: linear-gradient(to bottom, #f19e27 0%, #754a12 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(240, 160, 40, 0.5);
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .player-choose .bank .d-text,
+    .full-container .game-container .player-choose .tie .d-text,
+    .full-container .game-container .player-choose .player .d-text {
+        font-size: 2.33333rem;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .player-choose .bank .d-text,
+    .full-container .game-container .player-choose .tie .d-text,
+    .full-container .game-container .player-choose .player .d-text {
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+}
+.full-container .game-container .player-choose .bank .text-insufficient,
+.full-container .game-container .player-choose .tie .text-insufficient,
+.full-container .game-container .player-choose .player .text-insufficient {
+    position: absolute;
+    top: 0;
+    color: red;
+}
+.full-container .game-container .player-choose .bank .text-remove,
+.full-container .game-container .player-choose .tie .text-remove,
+.full-container .game-container .player-choose .player .text-remove {
+    position: absolute;
+    cursor: pointer;
+    right: -50%;
+    bottom: 10%;
+    background: red;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 0 1rem;
+    font-size: 1rem;
+    z-index: 1010;
+}
+.full-container .game-container .player-choose .jackpot {
+    background: black;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    text-align: center;
+    position: absolute;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .player-choose .jackpot {
+        width: 76.92308px;
+        height: 76.92308px;
+        padding-top: 16.66667px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .player-choose .jackpot {
+        width: 66.66667px;
+        height: 66.66667px;
+        padding-top: 16.66667px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose .jackpot {
+        width: 58.82353px;
+        height: 58.82353px;
+        padding-top: 12.5px;
+    }
+}
+.full-container .game-container .player-choose .jackpot img {
+    max-width: 70%;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+.full-container .game-container .player-choose .jackpot .text-insufficient {
+    position: absolute;
+    top: 0;
+    color: red;
+    left: 25%;
+}
+.full-container .game-container .player-choose .jackpot .text-remove {
+    position: absolute;
+    cursor: pointer;
+    right: -50%;
+    bottom: 10%;
+    background: red;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 0 1rem;
+    font-size: 1rem;
+    z-index: 1010;
+}
+.full-container .game-container .player-choose .jackpot-left {
+    top: -80%;
+    right: 13%;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .player-choose .jackpot-left {
+        top: -110%;
+        right: 14.5%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .player-choose .jackpot-left {
+        right: 10%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose .jackpot-left {
+        top: -105%;
+        right: 2%;
+    }
+}
+.full-container .game-container .player-choose .jackpot-right {
+    top: -80%;
+    left: 13%;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .player-choose .jackpot-right {
+        top: -110%;
+        left: 14.5%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .player-choose .jackpot-right {
+        left: 10%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose .jackpot-right {
+        top: -105%;
+        left: 2%;
+    }
+}
+.full-container .game-container .player-choose .jackpot-help {
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+@media only screen and (max-width: 560px) {
+    .full-container .game-container .player-choose .jackpot-help {
+        transform: scale(0.7);
+    }
+}
+.full-container .game-container .player-choose .jackpot-help .btn {
+    font-family: arial;
+    opacity: 0.5;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: rgba(250, 250, 250, 0.1);
+    border: 2px solid rgba(250, 250, 250, 0.1);
+    color: #ccc;
+    font-weight: bold;
+}
+.full-container .game-container .player-choose .jackpot-help:hover .tooltip {
+    display: block;
+}
+.full-container .game-container .player-choose .jackpot-help .tooltip {
+    background: #37937d;
+    background: linear-gradient(to bottom, #37937d 0%, #1f7374 100%);
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    left: -80px;
+    width: 200px;
+    padding: 1rem;
+    border: 2px solid rgba(63, 232, 213, 0.1);
+    z-index: 1010;
+}
+.full-container .game-container .player-choose .jackpot-help.right {
+    left: -30px;
+    right: auto;
+}
+.full-container .game-container .chips {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1620px) {
+    .full-container .game-container .chips {
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .game-container .chips {
+        margin-bottom: 4rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .game-container .chips {
+        display: none;
+    }
+}
+.full-container .count-down {
+    width: 50%;
+    border-radius: 0.5rem;
+    background: #072932;
+    padding: 0.5rem;
+}
+.full-container .count-down span {
+    display: inline-block;
+}
+.full-container .count-down .seconds {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    display: block;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .count-down .seconds {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .full-container .count-down {
+        width: auto;
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        font-size: 0.6rem;
+    }
+    .full-container .count-down .seconds {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .count-down {
+        top: 10%;
+    }
+}
+.full-container ul.game-status .active {
+    color: #f49303;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .full-container ul.game-status .active {
+        font-size: 0.8rem;
+    }
+}
+.full-container .action-btn {
+    background: #f19e27;
+    background: linear-gradient(to bottom, #f19e27 0%, #754a12 100%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    right: 5%;
+    bottom: 10%;
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 1050;
+}
+.full-container .action-btn span {
+    background-color: #ddd;
+    color: transparent;
+    text-shadow: 1px 1px #fff, -1px -1px #666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+.full-container .action-btn:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+@media only screen and (max-width: 960px) {
+    .full-container .action-btn {
+        font-size: 1.17647rem;
+        width: 88.23529px;
+        height: 88.23529px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .action-btn {
+        height: 50px;
+        position: fixed;
+        border-radius: 0.5rem 0.5rem 0 0;
+        right: 38%;
+        bottom: -1%;
+    }
+}
+.full-container .action-rebet {
+    background: #37937d;
+    background: linear-gradient(to bottom, #37937d 0%, #1f7374 100%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    right: 15%;
+    bottom: 10%;
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.full-container .action-rebet:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+@media only screen and (max-width: 1440px) {
+    .full-container .action-rebet {
+        right: 20%;
+        top: 0%;
+        bottom: auto;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .full-container .action-rebet {
+        font-size: 0.66667rem;
+        width: 52.94118px;
+        height: 52.94118px;
+        right: 5%;
+        top: 0%;
+        bottom: auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .full-container .action-rebet {
+        right: 5%;
+        top: -130%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .full-container .action-rebet {
+        height: 39.13043px;
+        position: fixed;
+        border-radius: 0.5rem 0.5rem 0 0;
+        right: 20%;
+        top: auto;
+        bottom: -1px;
+    }
+}
+
+.scoreboard {
+    width: 100%;
+    transition: none;
+    background: #072932 !important;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+}
+.scoreboard ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.scoreboard ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.scoreboard ::-webkit-scrollbar-thumb {
+    background: #3fe8d5;
+}
+.scoreboard ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.scoreboard h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 1620px) {
+    .scoreboard ul li {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+.scoreboard .score-item {
+    text-transform: uppercase;
+    position: relative;
+}
+.scoreboard .score-item .player {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: #03a9f4;
+}
+.scoreboard .score-item .banker {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: red;
+}
+.scoreboard .score-item .tie {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: green;
+}
+.scoreboard .score-item .pair {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: gray;
+}
+.scoreboard .score-item .natural {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 19px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: #f49303;
+}
+.scoreboard .score-item sup {
+    margin: 0.15rem;
+}
+.scoreboard .score-item sup.banker {
+    position: absolute;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: red;
+    left: 0;
+}
+.scoreboard .score-item sup.player {
+    position: absolute;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: blue;
+    right: 0;
+    bottom: 0;
+}
+.scoreboard ul.score-totals {
+    display: flex !important;
+    overflow-x: auto;
+    width: 100%;
+    min-width: 150px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    letter-spacing: 0.08rem;
+}
+.scoreboard ul.score-totals li {
+    border: 0;
+}
+.scoreboard ul.score-totals li .text-item {
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+}
+.scoreboard .score-history {
+    min-width: 125px;
+    overflow-x: auto;
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+.scoreboard .score-history .score-column {
+    display: flex;
+    flex-direction: column;
+}
+.scoreboard .score-history .score-column .score-item {
+    background: #fff;
+    margin: 0.1rem;
+    border-radius: 0.25rem;
+    line-height: 1rem;
+    padding: 0.05rem;
+}
+
+.scoreboard-mobile .btn {
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    color: #fff;
+    background: #072932;
+    border-radius: 0.5rem;
+    border: 0;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    max-width: 60px;
+    transform: scale(0.7);
+}
+
+.scoreboard-mobile .scoreboard {
+    display: none;
+    bottom: -15%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+}
+.scoreboard-mobile .scoreboard h4 {
+    margin-bottom: 1rem;
+}
+.scoreboard-mobile .scoreboard .close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    top: -5px;
+    position: relative;
+}
+.scoreboard-mobile .scoreboard .col-25 {
+    width: 30% !important;
+}
+.scoreboard-mobile .scoreboard .col-75 {
+    width: 70% !important;
+}
+
+/*modal*/
+.modal-open {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+.modal .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+    max-height: 650px;
+    overflow-x: auto;
+}
+@media only screen and (max-width: 560px) {
+    .modal .modal-dialog {
+        margin: 1rem;
+    }
+}
+.modal .modal-dialog::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+.modal .modal-dialog::-webkit-scrollbar-thumb {
+    background: #3fe8d5;
+}
+.modal .modal-dialog::-webkit-scrollbar-track {
+    background: #c5f8f2;
+}
+.modal .modal-dialog {
+    scrollbar-face-color: #3fe8d5;
+    scrollbar-track-color: #c5f8f2;
+}
+.modal .modal-dialog .modal-content {
+    position: relative;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+.modal .modal-dialog .modal-content .close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+}
+.modal .modal-dialog .modal-content .modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    text-transform: uppercase;
+}
+.modal .modal-dialog .modal-content .modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.modal .modal-dialog .modal-content .modal-body ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+.modal .modal-dialog .modal-content .modal-body ul li {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+.modal .modal-dialog .modal-content .modal-body ul li:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.modal .modal-dialog .modal-content .modal-body ul li:last-child {
+    border: 0;
+}
+.modal .modal-dialog .modal-content .modal-body table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: transparent;
+}
+.modal .modal-dialog .modal-content .modal-body table tr th {
+    padding: 0.5rem;
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+.modal .modal-dialog .modal-content .modal-body table tr td {
+    padding: 0.5rem;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal .modal-dialog .modal-content .modal-body form {
+    width: 100%;
+}
+.modal .modal-dialog .modal-content .modal-body form input,
+.modal .modal-dialog .modal-content .modal-body form textarea {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.modal .modal-dialog .modal-content .modal-body form .submit {
+    background: #3fe8d5;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+.modal .modal-dialog .modal-content .modal-body .col .font-icon {
+    font-size: 3rem;
+    display: block;
+}
+.modal .modal-dialog .modal-content .modal-body .dropdown {
+    cursor: pointer;
+}
+.modal .modal-dialog .modal-content .modal-body .collapse {
+    display: none;
+    padding: 1rem;
+}
+
+.auto-bet {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 50px;
+}
+.auto-bet .toggler {
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    margin: 0;
+    position: relative;
+}
+.auto-bet .toggler input {
+    display: none;
+}
+.auto-bet .slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px #072932, 0 0 4px #072932;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.auto-bet .slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #072932;
+    border-radius: 20px;
+    transform: translateX(-15px);
+    transition: 0.4s;
+}
+.auto-bet input:checked + .slider {
+    box-shadow: 0 0 0 2px #3fe8d5, 0 0 2px #3fe8d5;
+}
+.auto-bet input:checked + .slider:before {
+    transform: translateX(15px);
+    background: #3fe8d5;
+}
+
+/*responsive variables */
+.chip {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    border-radius: 50%;
+    border: 0.8rem dashed rgba(255, 255, 255, 0.95);
+    position: relative;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+@media only screen and (max-width: 960px) {
+    .chip {
+        border: 0.66667rem dashed rgba(255, 255, 255, 0.95);
+        width: 66.66667px;
+        height: 66.66667px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .chip {
+        border: 0.53333rem dashed rgba(255, 255, 255, 0.95);
+        width: 53.33333px;
+        height: 53.33333px;
+        margin: 0.53333rem;
+    }
+}
+.chip .value {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 2px dotted white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    .chip .value {
+        width: 31.66667px;
+        height: 31.66667px;
+    }
+}
+.chip .value .data-value {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 35px;
+}
+@media only screen and (max-width: 768px) {
+    .chip .value .data-value {
+        width: 20px;
+        height: 20px;
+        font-size: 0.625rem;
+        line-height: 15px;
+    }
+}
+
+.chip-selected {
+    width: 40px;
+    height: 40px;
+    margin: 0.4rem;
+    border: 0.4rem dashed rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+@media only screen and (max-width: 560px) {
+    .chip-selected {
+        bottom: -30%;
+        right: -30%;
+    }
+}
+.chip-selected .value {
+    width: 25px;
+    height: 25px;
+    border: 1px dotted white;
+}
+.chip-selected .value .data-value {
+    width: 20px;
+    height: 20px;
+    font-size: 0.625rem;
+    line-height: 15px;
+}
+
+.pos-1 {
+    right: 4%;
+}
+
+.pos-2 {
+    right: 8%;
+}
+
+.pos-3 {
+    right: 16%;
+}
+
+.pos-4 {
+    right: 24%;
+}
+
+.pos-5 {
+    right: 32%;
+}
+
+.chip-1 {
+    background: radial-gradient(circle, #2c81d6 0%, #42c3ff 80%);
+}
+.chip-1 .value .data-value {
+    border: 3px solid #42c3ff;
+    color: #42c3ff;
+}
+.chip-1:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+.chip-5 {
+    background: radial-gradient(circle, #ec6900 0%, #fa7f1d 100%);
+}
+.chip-5 .value .data-value {
+    border: 3px solid #ec6900;
+    color: #ec6900;
+}
+.chip-5:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+.chip-25 {
+    background: radial-gradient(circle, #45cc71 0%, #2d874b 100%);
+}
+.chip-25 .value .data-value {
+    border: 3px solid #45cc71;
+    color: #45cc71;
+}
+.chip-25:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+.chip-100 {
+    background: radial-gradient(circle, #666 0%, #131313 100%);
+}
+.chip-100 .value .data-value {
+    border: 3px solid #666;
+    color: #666;
+}
+.chip-100:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+.chip-500 {
+    background: radial-gradient(circle, #a75ac6 0%, #6d3b81 100%);
+}
+.chip-500 .value .data-value {
+    border: 3px solid #a75ac6;
+    color: #a75ac6;
+}
+.chip-500:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 960px) {
+    .desktop-chip {
+        display: none !important;
+    }
+}
+
+.chips-menu {
+    position: absolute;
+    bottom: 27%;
+    width: 100%;
+    transform: scale(0.9);
+}
+.chips-menu .menu-toggler {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 33px;
+    height: 33px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.chips-menu .menu-toggler:hover + label,
+.chips-menu .menu-toggler:hover + label:before,
+.chips-menu .menu-toggler:hover + label:after {
+    background: white;
+}
+.chips-menu .menu-toggler:checked + label {
+    background: transparent;
+}
+.chips-menu .menu-toggler:checked + label:before,
+.chips-menu .menu-toggler:checked + label:after {
+    top: 0;
+    width: 33px;
+    transform-origin: 50% 50%;
+}
+.chips-menu .menu-toggler:checked + label:before {
+    transform: rotate(45deg);
+}
+.chips-menu .menu-toggler:checked + label:after {
+    transform: rotate(-45deg);
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item {
+    opacity: 1;
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+    transform: rotate(0deg) translateX(-100px);
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+    transform: rotate(45deg) translateX(-100px);
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+    transform: rotate(90deg) translateX(-100px);
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+    transform: rotate(135deg) translateX(-100px);
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+    transform: rotate(180deg) translateX(-100px);
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item div {
+    pointer-events: auto;
+}
+.chips-menu .menu-toggler + label {
+    width: 33px;
+    height: 4.125px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.0625px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.chips-menu .menu-toggler + label:before,
+.chips-menu .menu-toggler + label:after {
+    width: 33px;
+    height: 4.125px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.0625px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+.chips-menu .menu-toggler + label:before {
+    top: 8.25px;
+}
+.chips-menu .menu-toggler + label:after {
+    top: -8.25px;
+}
+.chips-menu .menu-item:nth-child(1) .chip {
+    transform: rotate(0deg);
+}
+.chips-menu .menu-item:nth-child(2) .chip {
+    transform: rotate(-45deg);
+}
+.chips-menu .menu-item:nth-child(3) .chip {
+    transform: rotate(-90deg);
+}
+.chips-menu .menu-item:nth-child(4) .chip {
+    transform: rotate(-135deg);
+}
+.chips-menu .menu-item:nth-child(5) .chip {
+    transform: rotate(-180deg);
+}
+.chips-menu .menu-item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+}
+.chips-menu .menu-item .chip {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: 0.2rem dashed rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    position: inherit;
+}
+.chips-menu .menu-item .chip .value {
+    width: 26.66667px;
+    height: 26.66667px;
+    border: 1px dotted white;
+}
+.chips-menu .menu-item .chip .value .data-value {
+    width: 26.66667px;
+    height: 26.66667px;
+    font-size: 0.83333rem;
+    line-height: 23px;
+}
+.chips-menu .menu-item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.chips-menu .menu-item a:hover {
+    box-shadow: 0 0 0 0.66667px rgba(255, 255, 255, 0.3);
+}
+
+/*responsive variables */
+/*variables*/
+.cards {
+    margin-bottom: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+    .cards {
+        margin-bottom: 6rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .cards {
+        margin-bottom: 5rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .cards {
+        margin-bottom: 3.5rem;
+    }
+}
+.cards .card {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    width: 60px;
+    height: 80px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    background: #fff;
+    display: inline-block;
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card {
+        width: 46.15385px;
+        height: 61.53846px;
+        margin: 0.3rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card {
+        width: 40px;
+        height: 53.33333px;
+        margin: 0.3rem;
+    }
+}
+.cards .card .diamonds .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+    .cards .card .diamonds .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .diamonds .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .diamonds .value {
+        font-size: 1rem;
+    }
+}
+.cards .card .diamonds .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQwLjczMSA0MC43MzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwLjczMSA0MC43MzE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz4KCTxwYXRoIGQ9Ik0zNy43NjEsMTkuODMzYzAuMTE0LDAuMTY0LDAuMTg0LDAuMzYzLDAuMTg0LDAuNTc4YzAsMC40MzEtMC4yNzEsMC43OTctMC42NTMsMC45MzggICBjLTEuNTQ2LDEuMDk2LTkuODIsNy4zMDctMTYuMDE2LDE4LjczM2MtMC4xMjIsMC4zMDQtMC4zNzgsMC41NDgtMC43LDAuNjIxYy0wLjA4NCwwLjAyMS0wLjE2OCwwLjAyNy0wLjI1MiwwLjAyNyAgIGMtMC4zMzksMC0wLjY1Ni0wLjE1Ni0wLjgzMi0wLjQ1M2MtMC4wNDctMC4wNy0wLjA4NC0wLjE0Ni0wLjExMi0wLjIyOGMtMC44MDQtMS41Ni02LjEzMi0xMS40MjItMTUuOTg0LTE4Ljc1NiAgIGMtMC4zNTgtMC4xNTItMC42MDgtMC41MDctMC42MDgtMC45MjFjMC0wLjAwOCwwLTAuMDE2LDAtMC4wMjJjLTAuMDA0LTAuMTksMC4wNDUtMC4zODEsMC4xNDktMC41NDkgICBjMC4xMTgtMC4xOSwwLjI5NS0wLjMzMywwLjQ5OS0wLjQxYzEuMjc5LTAuODk0LDkuNjQ5LTcuMDIyLDE1Ljk2NS0xOC42MTJDMTkuNDk5LDAuMzM0LDE5Ljg5OSwwLDIwLjM3NiwwICAgYzAuMTk2LDAsMC4zNzksMC4wNTcsMC41MzMsMC4xNTRjMC4yMTMsMC4xMiwwLjM3NiwwLjMxNiwwLjQ1NSwwLjU1M2MwLjYxMywxLjIwOSw1LjkzOCwxMS4zMTgsMTYuMDQsMTguODAyICAgQzM3LjU0OCwxOS41ODcsMzcuNjcyLDE5LjY5OCwzNy43NjEsMTkuODMzeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkYwMDAwIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=);
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .diamonds .icon {
+        width: 23.07692px;
+        height: 23.07692px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .diamonds .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+.cards .card .hearts .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+    .cards .card .hearts .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .hearts .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .hearts .value {
+        font-size: 1rem;
+    }
+}
+.cards .card .hearts .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIC0yMSA0NDggNDQ4IiB3aWR0aD0iNTEyIj48Zz48cGF0aCBkPSJtMjI0IDQwNi45MDIzNDRjMjkuMzgyODEyLTE2LjIxNDg0NCAyMjQtMTI5LjQ5NjA5NCAyMjQtMjgyLjkwMjM0NCAwLTY2LjA1NDY4OC01NC4xOTkyMTktMTI0LTExNi0xMjQtNDEuODY3MTg4LjA3NDIxODgtODAuNDYwOTM4IDIyLjY2MDE1Ni0xMDEuMDMxMjUgNTkuMTI4OTA2LTEuNTM5MDYyIDIuMzUxNTYzLTQuMTYwMTU2IDMuNzY1NjI1LTYuOTY4NzUgMy43NjU2MjVzLTUuNDI5Njg4LTEuNDE0MDYyLTYuOTY4NzUtMy43NjU2MjVjLTIwLjU3MDMxMi0zNi40Njg3NS01OS4xNjQwNjItNTkuMDU0Njg3Mi0xMDEuMDMxMjUtNTkuMTI4OTA2LTYxLjgwMDc4MSAwLTExNiA1Ny45NDUzMTItMTE2IDEyNCAwIDE1My40MDYyNSAxOTQuNjE3MTg4IDI2Ni42ODc1IDIyNCAyODIuOTAyMzQ0em0wIDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiIHN0eWxlPSJmaWxsOiNGRjJBMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==);
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .hearts .icon {
+        width: 23.07692px;
+        height: 23.07692px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .hearts .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+.cards .card .spades .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+@media only screen and (max-width: 960px) {
+    .cards .card .spades .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .spades .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .spades .value {
+        font-size: 1rem;
+    }
+}
+.cards .card .spades .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzQ5LjQ2OCAzNDkuNDY4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDkuNDY4IDM0OS40Njg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzI4LjI5NiwxODIuMzNjMC4zMTgtNTAuMjUxLTM3LjI3OC03NC43Ni03MC40NjYtOTYuMzY4bC0wLjM5Ni0wLjI1OGMtNy4yNDItNC43MzUtMTQuMDY5LTkuMjExLTIwLjExNi0xMy43MTggICAgYy0yOC45NDMtMjEuNjkyLTU0LjI3Ny01NS42MzQtNTcuMjM4LTY3LjkyYy0wLjU5Ny0yLjM5OS0yLjY3NS0zLjk4NC01LjQzMS00LjA2NWMtMS45NTUsMC4xNTktNC4yMTMsMS40NDQtNC44ODIsMy45MDMgICAgYy0zLjM3NSwxMi4yMDItMjUuNDg3LDQ1LjE3MS01Ny40NDgsNjcuMzMyYy01LjEwNCwzLjU0OS0xMC42MDIsNy4wMTctMTYuOTU1LDExLjAzN2MtMzMuMjA0LDIxLjAyMy03NC41MzUsNDcuMjAxLTc0LjE5Miw5OS40MjEgICAgYzAuNDExLDY0LjYxMSwzOS43MDMsOTQuMDIyLDc2LjAyMSw5NC4wMjJjMjMuNjI5LDAsNDYuNjIxLTExLjYyNSw2My41ODUtMzIuMDQxYy03LjMxNywzNS4wMzItMjkuNjE5LDc4LjU3Mi05My4wNTcsOTUuMzIgICAgYy0yLjU2NCwwLjY4NS00LjI0NSwzLjIwNi0zLjkzLDUuODQzYzAuMzUxLDIuNjQyLDIuNjMsNC42Myw1LjMwNSw0LjYzaDIxMS4zNjZjMi45NTQsMCw1LjMyNi0yLjM3OSw1LjMyNi01LjMyNiAgICBjMC0yLjU4Mi0xLjkxLTQuOTE4LTQuMDk2LTUuMTcxYy0yLjc4LTAuODQxLTY3LjI2LTIwLjk3NS04OS40NzgtOTMuNTQyYzE2LjgwMiwxNy43NTYsMzguOTc4LDI3Ljg2MSw2MS40MDUsMjcuODggICAgQzI5MC41MDgsMjczLjMwOSwzMjcuODY5LDI0NS4xNywzMjguMjk2LDE4Mi4zM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .spades .icon {
+        width: 23.07692px;
+        height: 23.07692px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .spades .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+.cards .card .clubs .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+@media only screen and (max-width: 960px) {
+    .cards .card .clubs .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .clubs .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .clubs .value {
+        font-size: 1rem;
+    }
+}
+.cards .card .clubs .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzQ3LjM4OSAzNDcuMzg5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDcuMzg5IDM0Ny4zODk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQ3LjM4OSwxODkuMDE2YzAtNDcuNzY1LTM5LjU4My04Ny4xOTgtODguNDItODguMzE4YzAuNTc2LTQuMDgzLDAuODgzLTguMjMyLDAuODgzLTEyLjM0NiAgICBjMC00OC43MTctNDAuNjEtODguMzM3LTkwLjU0MS04OC4zMzdjLTQ5LjkxOCwwLTkwLjUyLDM5LjYyLTkwLjUyLDg4LjMzN2MwLDUuNzk3LDAuNTg1LDExLjU4OSwxLjcyOSwxNy4yNTggICAgQzM1LjMwMiwxMTAuNDY3LDAsMTQ4Ljg1NSwwLDE5My4zODdjMCw0OC43MDUsNDAuNjIsODguMzM3LDkwLjU0OSw4OC4zMzdjMjcuMTYsMCw1My4xNjQtMTIuMTE3LDcwLjIzOC0zMi41NDYgICAgYy03LjE1MiwzMi4xNDQtMjguNDYzLDcyLjE4OS04OC4zMzMsODcuOTg4bC0yLjQ5MiwwLjY2NmwxLjI2Nyw5LjU0MmgyMDYuNDY5bDEuMTE3LTkuNjI2bC0yLjUxLTAuNTgyICAgIGMtMi43MDgtMC42NjYtNjUuNzE3LTE2LjkxNi04Ni4wMTMtODguMjUyYzE2LjkzNCwxNy44Nyw0MS41NDcsMjguNDI2LDY2LjU2OCwyOC40MjYgICAgQzMwNi43NzMsMjc3LjM0LDM0Ny4zODksMjM3LjcyNywzNDcuMzg5LDE4OS4wMTZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+@media only screen and (max-width: 1620px) {
+    .cards .card .clubs .icon {
+        width: 23.07692px;
+        height: 23.07692px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cards .card .clubs .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+.cards .card-l-result,
+.cards .card-r-result {
+    position: absolute;
+    top: -2.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f49303;
+}
+.cards .card-r-result {
+    left: 1rem;
+    text-align: left;
+}
+.cards .card-rotate-r {
+    transform: rotate(90deg);
+    margin-left: 1rem;
+}
+.cards .card-rotate-l {
+    transform: rotate(-90deg);
+    margin-right: 1rem;
+}
+
+/****************
+Tablet
+*****************/
+/*iPad 2019*/
+/************
+Mobiles
+*************/
+/*iPhone 4 y 4S: 320 x 480*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*iPhone 5 y 5S: 320 x 568*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Apple iPhone 7, iPhone 8 375 x 667*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*iPhone X: 375 x 812*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Apple iPhone 6+, 6s+, 7+, 8+ 414 x 736*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Nexus 4: 384 x 598*/
+@media only screen and (min-device-width: 384px) and (max-device-width: 598px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Nexus 5: 360 x 598*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 598px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Galaxy S3, S4, S5: 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*LG G3 G4 G5 | Samsung Galaxy  360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Samsung Galaxy S5 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*HTC One: 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Samsung Galaxy S 360 x 640*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Samsung Galaxy Nexus*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+/*Samsung Galaxy S8+*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 4) and (orientation: landscape) {
+    .landscape {
+        display: flex !important;
+    }
+}
+
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs169vgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvgUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9ogUE.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v35/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "mycasino";
+    src: url("../font/mycasino.eot?29231763");
+    src: url("../font/mycasino.eot?29231763#iefix") format("embedded-opentype"),
+        url("../font/mycasino.woff2?29231763") format("woff2"), url("../font/mycasino.woff?29231763") format("woff"),
+        url("../font/mycasino.ttf?29231763") format("truetype"),
+        url("../font/mycasino.svg?29231763#mycasino") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'mycasino';
+    src: url('../font/mycasino.svg?29231763#mycasino') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "mycasino";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+    content: "\e800";
+} /* '' */
+.icon-heart-circled:before {
+    content: "\e801";
+} /* '' */
+.icon-mail:before {
+    content: "\e802";
+} /* '' */
+.icon-videocam:before {
+    content: "\e803";
+} /* '' */
+.icon-th-large:before {
+    content: "\e804";
+} /* '' */
+.icon-ok:before {
+    content: "\e805";
+} /* '' */
+.icon-ok-circled:before {
+    content: "\e806";
+} /* '' */
+.icon-ok-circled2:before {
+    content: "\e807";
+} /* '' */
+.icon-cancel:before {
+    content: "\e808";
+} /* '' */
+.icon-cancel-circled:before {
+    content: "\e809";
+} /* '' */
+.icon-cancel-circled2:before {
+    content: "\e80a";
+} /* '' */
+.icon-plus:before {
+    content: "\e80b";
+} /* '' */
+.icon-plus-circled:before {
+    content: "\e80c";
+} /* '' */
+.icon-minus:before {
+    content: "\e80d";
+} /* '' */
+.icon-minus-circled:before {
+    content: "\e80e";
+} /* '' */
+.icon-help-circled:before {
+    content: "\e80f";
+} /* '' */
+.icon-info-circled:before {
+    content: "\e810";
+} /* '' */
+.icon-bookmark:before {
+    content: "\e811";
+} /* '' */
+.icon-bookmark-empty:before {
+    content: "\e812";
+} /* '' */
+.icon-warning:before {
+    content: "\e813";
+} /* '' */
+.icon-exclamation:before {
+    content: "\e814";
+} /* '' */
+.icon-cog:before {
+    content: "\e815";
+} /* '' */
+.icon-wrench:before {
+    content: "\e816";
+} /* '' */
+.icon-wrench-circled:before {
+    content: "\e817";
+} /* '' */
+.icon-cog-circled:before {
+    content: "\e818";
+} /* '' */
+.icon-volume-off:before {
+    content: "\e819";
+} /* '' */
+.icon-volume:before {
+    content: "\e81a";
+} /* '' */
+.icon-th-list:before {
+    content: "\e81b";
+} /* '' */
+.icon-play:before {
+    content: "\e81c";
+} /* '' */
+.icon-play-circled2:before {
+    content: "\e81d";
+} /* '' */
+.icon-down-open:before {
+    content: "\e81e";
+} /* '' */
+.icon-left-open:before {
+    content: "\e81f";
+} /* '' */
+.icon-right-open:before {
+    content: "\e820";
+} /* '' */
+.icon-up-open:before {
+    content: "\e821";
+} /* '' */
+.icon-play-circled:before {
+    content: "\e822";
+} /* '' */
+.icon-stop:before {
+    content: "\e823";
+} /* '' */
+.icon-stop-circled:before {
+    content: "\e824";
+} /* '' */
+.icon-pause:before {
+    content: "\e825";
+} /* '' */
+.icon-pause-circled:before {
+    content: "\e826";
+} /* '' */
+.icon-resize-full-alt:before {
+    content: "\e827";
+} /* '' */
+.icon-resize-full:before {
+    content: "\e828";
+} /* '' */
+.icon-adjust:before {
+    content: "\e829";
+} /* '' */
+.icon-tint:before {
+    content: "\e82a";
+} /* '' */
+.icon-star-circled:before {
+    content: "\e82b";
+} /* '' */
+.icon-star:before {
+    content: "\e82c";
+} /* '' */
+.icon-heart-empty:before {
+    content: "\e82d";
+} /* '' */
+.icon-star-empty:before {
+    content: "\e82e";
+} /* '' */
+.icon-picture:before {
+    content: "\e82f";
+} /* '' */
+.icon-video-chat:before {
+    content: "\e830";
+} /* '' */
+.icon-eye:before {
+    content: "\e831";
+} /* '' */
+.icon-book:before {
+    content: "\e832";
+} /* '' */
+.icon-calendar:before {
+    content: "\e833";
+} /* '' */
+.icon-export:before {
+    content: "\e834";
+} /* '' */
+.icon-home-circled:before {
+    content: "\e835";
+} /* '' */
+.icon-comment:before {
+    content: "\e836";
+} /* '' */
+.icon-comment-alt:before {
+    content: "\e837";
+} /* '' */
+.icon-move:before {
+    content: "\e838";
+} /* '' */
+.icon-arrows-cw:before {
+    content: "\e839";
+} /* '' */
+.icon-cw-circled:before {
+    content: "\e83a";
+} /* '' */
+.icon-cw:before {
+    content: "\e83b";
+} /* '' */
+.icon-target:before {
+    content: "\e83c";
+} /* '' */
+.icon-window-maximize:before {
+    content: "\f2d0";
+} /* '' */
+.icon-window-minimize:before {
+    content: "\f2d1";
+} /* '' */
+.icon-window-close:before {
+    content: "\f2d3";
+} /* '' */
+/*responsive variables */
+/*variables*/
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.cards {
+    margin-bottom: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000319;
+        }
+    }
+    .cards {
+        margin-bottom: 6rem;
+    }
+}
+@media only screen and (max-width: 560px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000319;
+        }
+    }
+    .cards {
+        margin-bottom: 5rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000319;
+        }
+    }
+    .cards {
+        margin-bottom: 3.5rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000327;
+    }
+}
+.cards .card {
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    width: 60px;
+    height: 80px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+    background: #fff;
+    display: inline-block;
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000327;
+        }
+    }
+    .cards .card {
+        width: 46.1538461538px;
+        height: 61.5384615385px;
+        margin: 0.3rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000327;
+        }
+    }
+    .cards .card {
+        width: 40px;
+        height: 53.3333333333px;
+        margin: 0.3rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000386;
+    }
+}
+.cards .card .diamonds .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000386;
+        }
+    }
+    .cards .card .diamonds .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000386;
+        }
+    }
+    .cards .card .diamonds .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000386;
+        }
+    }
+    .cards .card .diamonds .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000390;
+    }
+}
+.cards .card .diamonds .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQwLjczMSA0MC43MzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwLjczMSA0MC43MzE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz4KCTxwYXRoIGQ9Ik0zNy43NjEsMTkuODMzYzAuMTE0LDAuMTY0LDAuMTg0LDAuMzYzLDAuMTg0LDAuNTc4YzAsMC40MzEtMC4yNzEsMC43OTctMC42NTMsMC45MzggICBjLTEuNTQ2LDEuMDk2LTkuODIsNy4zMDctMTYuMDE2LDE4LjczM2MtMC4xMjIsMC4zMDQtMC4zNzgsMC41NDgtMC43LDAuNjIxYy0wLjA4NCwwLjAyMS0wLjE2OCwwLjAyNy0wLjI1MiwwLjAyNyAgIGMtMC4zMzksMC0wLjY1Ni0wLjE1Ni0wLjgzMi0wLjQ1M2MtMC4wNDctMC4wNy0wLjA4NC0wLjE0Ni0wLjExMi0wLjIyOGMtMC44MDQtMS41Ni02LjEzMi0xMS40MjItMTUuOTg0LTE4Ljc1NiAgIGMtMC4zNTgtMC4xNTItMC42MDgtMC41MDctMC42MDgtMC45MjFjMC0wLjAwOCwwLTAuMDE2LDAtMC4wMjJjLTAuMDA0LTAuMTksMC4wNDUtMC4zODEsMC4xNDktMC41NDkgICBjMC4xMTgtMC4xOSwwLjI5NS0wLjMzMywwLjQ5OS0wLjQxYzEuMjc5LTAuODk0LDkuNjQ5LTcuMDIyLDE1Ljk2NS0xOC42MTJDMTkuNDk5LDAuMzM0LDE5Ljg5OSwwLDIwLjM3NiwwICAgYzAuMTk2LDAsMC4zNzksMC4wNTcsMC41MzMsMC4xNTRjMC4yMTMsMC4xMiwwLjM3NiwwLjMxNiwwLjQ1NSwwLjU1M2MwLjYxMywxLjIwOSw1LjkzOCwxMS4zMTgsMTYuMDQsMTguODAyICAgQzM3LjU0OCwxOS41ODcsMzcuNjcyLDE5LjY5OCwzNy43NjEsMTkuODMzeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkYwMDAwIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000390;
+        }
+    }
+    .cards .card .diamonds .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000390;
+        }
+    }
+    .cards .card .diamonds .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \0000397;
+    }
+}
+.cards .card .hearts .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff0000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000397;
+        }
+    }
+    .cards .card .hearts .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000397;
+        }
+    }
+    .cards .card .hearts .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \0000397;
+        }
+    }
+    .cards .card .hearts .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003101;
+    }
+}
+.cards .card .hearts .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIC0yMSA0NDggNDQ4IiB3aWR0aD0iNTEyIj48Zz48cGF0aCBkPSJtMjI0IDQwNi45MDIzNDRjMjkuMzgyODEyLTE2LjIxNDg0NCAyMjQtMTI5LjQ5NjA5NCAyMjQtMjgyLjkwMjM0NCAwLTY2LjA1NDY4OC01NC4xOTkyMTktMTI0LTExNi0xMjQtNDEuODY3MTg4LjA3NDIxODgtODAuNDYwOTM4IDIyLjY2MDE1Ni0xMDEuMDMxMjUgNTkuMTI4OTA2LTEuNTM5MDYyIDIuMzUxNTYzLTQuMTYwMTU2IDMuNzY1NjI1LTYuOTY4NzUgMy43NjU2MjVzLTUuNDI5Njg4LTEuNDE0MDYyLTYuOTY4NzUtMy43NjU2MjVjLTIwLjU3MDMxMi0zNi40Njg3NS01OS4xNjQwNjItNTkuMDU0Njg3Mi0xMDEuMDMxMjUtNTkuMTI4OTA2LTYxLjgwMDc4MSAwLTExNiA1Ny45NDUzMTItMTE2IDEyNCAwIDE1My40MDYyNSAxOTQuNjE3MTg4IDI2Ni42ODc1IDIyNCAyODIuOTAyMzQ0em0wIDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiIHN0eWxlPSJmaWxsOiNGRjJBMDAiPjwvcGF0aD48L2c+IDwvc3ZnPg==);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003101;
+        }
+    }
+    .cards .card .hearts .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003101;
+        }
+    }
+    .cards .card .hearts .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003108;
+    }
+}
+.cards .card .spades .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003108;
+        }
+    }
+    .cards .card .spades .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003108;
+        }
+    }
+    .cards .card .spades .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003108;
+        }
+    }
+    .cards .card .spades .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003112;
+    }
+}
+.cards .card .spades .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzQ5LjQ2OCAzNDkuNDY4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDkuNDY4IDM0OS40Njg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzI4LjI5NiwxODIuMzNjMC4zMTgtNTAuMjUxLTM3LjI3OC03NC43Ni03MC40NjYtOTYuMzY4bC0wLjM5Ni0wLjI1OGMtNy4yNDItNC43MzUtMTQuMDY5LTkuMjExLTIwLjExNi0xMy43MTggICAgYy0yOC45NDMtMjEuNjkyLTU0LjI3Ny01NS42MzQtNTcuMjM4LTY3LjkyYy0wLjU5Ny0yLjM5OS0yLjY3NS0zLjk4NC01LjQzMS00LjA2NWMtMS45NTUsMC4xNTktNC4yMTMsMS40NDQtNC44ODIsMy45MDMgICAgYy0zLjM3NSwxMi4yMDItMjUuNDg3LDQ1LjE3MS01Ny40NDgsNjcuMzMyYy01LjEwNCwzLjU0OS0xMC42MDIsNy4wMTctMTYuOTU1LDExLjAzN2MtMzMuMjA0LDIxLjAyMy03NC41MzUsNDcuMjAxLTc0LjE5Miw5OS40MjEgICAgYzAuNDExLDY0LjYxMSwzOS43MDMsOTQuMDIyLDc2LjAyMSw5NC4wMjJjMjMuNjI5LDAsNDYuNjIxLTExLjYyNSw2My41ODUtMzIuMDQxYy03LjMxNywzNS4wMzItMjkuNjE5LDc4LjU3Mi05My4wNTcsOTUuMzIgICAgYy0yLjU2NCwwLjY4NS00LjI0NSwzLjIwNi0zLjkzLDUuODQzYzAuMzUxLDIuNjQyLDIuNjMsNC42Myw1LjMwNSw0LjYzaDIxMS4zNjZjMi45NTQsMCw1LjMyNi0yLjM3OSw1LjMyNi01LjMyNiAgICBjMC0yLjU4Mi0xLjkxLTQuOTE4LTQuMDk2LTUuMTcxYy0yLjc4LTAuODQxLTY3LjI2LTIwLjk3NS04OS40NzgtOTMuNTQyYzE2LjgwMiwxNy43NTYsMzguOTc4LDI3Ljg2MSw2MS40MDUsMjcuODggICAgQzI5MC41MDgsMjczLjMwOSwzMjcuODY5LDI0NS4xNywzMjguMjk2LDE4Mi4zM3oiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003112;
+        }
+    }
+    .cards .card .spades .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003112;
+        }
+    }
+    .cards .card .spades .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003119;
+    }
+}
+.cards .card .clubs .value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003119;
+        }
+    }
+    .cards .card .clubs .value {
+        font-size: 1.35rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003119;
+        }
+    }
+    .cards .card .clubs .value {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003119;
+        }
+    }
+    .cards .card .clubs .value {
+        font-size: 1rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003123;
+    }
+}
+.cards .card .clubs .icon {
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMzQ3LjM4OSAzNDcuMzg5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDcuMzg5IDM0Ny4zODk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQ3LjM4OSwxODkuMDE2YzAtNDcuNzY1LTM5LjU4My04Ny4xOTgtODguNDItODguMzE4YzAuNTc2LTQuMDgzLDAuODgzLTguMjMyLDAuODgzLTEyLjM0NiAgICBjMC00OC43MTctNDAuNjEtODguMzM3LTkwLjU0MS04OC4zMzdjLTQ5LjkxOCwwLTkwLjUyLDM5LjYyLTkwLjUyLDg4LjMzN2MwLDUuNzk3LDAuNTg1LDExLjU4OSwxLjcyOSwxNy4yNTggICAgQzM1LjMwMiwxMTAuNDY3LDAsMTQ4Ljg1NSwwLDE5My4zODdjMCw0OC43MDUsNDAuNjIsODguMzM3LDkwLjU0OSw4OC4zMzdjMjcuMTYsMCw1My4xNjQtMTIuMTE3LDcwLjIzOC0zMi41NDYgICAgYy03LjE1MiwzMi4xNDQtMjguNDYzLDcyLjE4OS04OC4zMzMsODcuOTg4bC0yLjQ5MiwwLjY2NmwxLjI2Nyw5LjU0MmgyMDYuNDY5bDEuMTE3LTkuNjI2bC0yLjUxLTAuNTgyICAgIGMtMi43MDgtMC42NjYtNjUuNzE3LTE2LjkxNi04Ni4wMTMtODguMjUyYzE2LjkzNCwxNy44Nyw0MS41NDcsMjguNDI2LDY2LjU2OCwyOC40MjYgICAgQzMwNi43NzMsMjc3LjM0LDM0Ny4zODksMjM3LjcyNywzNDcuMzg5LDE4OS4wMTZ6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+@media only screen and (max-width: 1620px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003123;
+        }
+    }
+    .cards .card .clubs .icon {
+        width: 23.0769230769px;
+        height: 23.0769230769px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+        }
+        line {
+            font-family: \00003123;
+        }
+    }
+    .cards .card .clubs .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003130;
+    }
+}
+.cards .card-l-result,
+.cards .card-r-result {
+    position: absolute;
+    top: -2.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f49303;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003139;
+    }
+}
+.cards .card-r-result {
+    left: 1rem;
+    text-align: left;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003144;
+    }
+}
+.cards .card-rotate-r {
+    transform: rotate(90deg);
+    margin-left: 1rem;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/deck\.scss;
+    }
+    line {
+        font-family: \00003149;
+    }
+}
+.cards .card-rotate-l {
+    transform: rotate(-90deg);
+    margin-right: 1rem;
+}
+
+/*# sourceMappingURL=deck.css.map */
+
+/*responsive variables */
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000325;
+    }
+}
+.chip {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem;
+    border-radius: 50%;
+    border: 0.8rem dashed rgba(255, 255, 255, 0.95);
+    position: relative;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000325;
+        }
+    }
+    .chip {
+        border: 0.6666666667rem dashed rgba(255, 255, 255, 0.95);
+        width: 66.6666666667px;
+        height: 66.6666666667px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000325;
+        }
+    }
+    .chip {
+        border: 0.5333333333rem dashed rgba(255, 255, 255, 0.95);
+        width: 53.3333333333px;
+        height: 53.3333333333px;
+        margin: 0.5333333333rem;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000351;
+    }
+}
+.chip .value {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 2px dotted white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000351;
+        }
+    }
+    .chip .value {
+        width: 31.6666666667px;
+        height: 31.6666666667px;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000365;
+    }
+}
+.chip .value .data-value {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 35px;
+}
+@media only screen and (max-width: 768px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000365;
+        }
+    }
+    .chip .value .data-value {
+        width: 20px;
+        height: 20px;
+        font-size: 0.625rem;
+        line-height: 15px;
+    }
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000389;
+    }
+}
+.chip-selected {
+    width: 40px;
+    height: 40px;
+    margin: 0.4rem;
+    border: 0.4rem dashed rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+@media only screen and (max-width: 560px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \0000389;
+        }
+    }
+    .chip-selected {
+        bottom: -30%;
+        right: -30%;
+    }
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003105;
+    }
+}
+.chip-selected .value {
+    width: 25px;
+    height: 25px;
+    border: 1px dotted white;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003110;
+    }
+}
+.chip-selected .value .data-value {
+    width: 20px;
+    height: 20px;
+    font-size: 0.625rem;
+    line-height: 15px;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003124;
+    }
+}
+.pos-1 {
+    right: 4%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003127;
+    }
+}
+.pos-2 {
+    right: 8%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003130;
+    }
+}
+.pos-3 {
+    right: 16%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003133;
+    }
+}
+.pos-4 {
+    right: 24%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003136;
+    }
+}
+.pos-5 {
+    right: 32%;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003141;
+    }
+}
+.chip-1 {
+    background: radial-gradient(circle, #2c81d6 0%, #42c3ff 80%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003148;
+    }
+}
+.chip-1 .value .data-value {
+    border: 3px solid #42c3ff;
+    color: #42c3ff;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-1:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003158;
+    }
+}
+.chip-5 {
+    background: radial-gradient(circle, #ec6900 0%, #fa7f1d 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003165;
+    }
+}
+.chip-5 .value .data-value {
+    border: 3px solid #ec6900;
+    color: #ec6900;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-5:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003174;
+    }
+}
+.chip-25 {
+    background: radial-gradient(circle, #45cc71 0%, #2d874b 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003181;
+    }
+}
+.chip-25 .value .data-value {
+    border: 3px solid #45cc71;
+    color: #45cc71;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-25:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003190;
+    }
+}
+.chip-100 {
+    background: radial-gradient(circle, #666 0%, #131313 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003197;
+    }
+}
+.chip-100 .value .data-value {
+    border: 3px solid #666;
+    color: #666;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-100:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003206;
+    }
+}
+.chip-500 {
+    background: radial-gradient(circle, #a75ac6 0%, #6d3b81 100%);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003213;
+    }
+}
+.chip-500 .value .data-value {
+    border: 3px solid #a75ac6;
+    color: #a75ac6;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \0000319;
+    }
+}
+.chip-500:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 960px) {
+    @media -sass-debug-info {
+        filename {
+            font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+        }
+        line {
+            font-family: \00003259;
+        }
+    }
+    .desktop-chip {
+        display: none !important;
+    }
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003268;
+    }
+}
+.chips-menu {
+    position: absolute;
+    bottom: 27%;
+    width: 100%;
+    transform: scale(0.9);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003275;
+    }
+}
+.chips-menu .menu-toggler {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 33px;
+    height: 33px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003282;
+    }
+}
+.chips-menu .menu-toggler:hover + label,
+.chips-menu .menu-toggler:hover + label:before,
+.chips-menu .menu-toggler:hover + label:after {
+    background: white;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003290;
+    }
+}
+.chips-menu .menu-toggler:checked + label {
+    background: transparent;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003294;
+    }
+}
+.chips-menu .menu-toggler:checked + label:before,
+.chips-menu .menu-toggler:checked + label:after {
+    top: 0;
+    width: 33px;
+    transform-origin: 50% 50%;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003301;
+    }
+}
+.chips-menu .menu-toggler:checked + label:before {
+    transform: rotate(45deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003305;
+    }
+}
+.chips-menu .menu-toggler:checked + label:after {
+    transform: rotate(-45deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003311;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item {
+    opacity: 1;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+    transform: rotate(0deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+    transform: rotate(45deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+    transform: rotate(90deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+    transform: rotate(135deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003316;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+    transform: rotate(180deg) translateX(-100px);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003321;
+    }
+}
+.chips-menu .menu-toggler:checked ~ ul .menu-item div {
+    pointer-events: auto;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003326;
+    }
+}
+.chips-menu .menu-toggler + label {
+    width: 33px;
+    height: 4.125px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.0625px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003330;
+    }
+}
+.chips-menu .menu-toggler + label:before,
+.chips-menu .menu-toggler + label:after {
+    width: 33px;
+    height: 4.125px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.0625px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003338;
+    }
+}
+.chips-menu .menu-toggler + label:before {
+    top: 8.25px;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003342;
+    }
+}
+.chips-menu .menu-toggler + label:after {
+    top: -8.25px;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(1) .chip {
+    transform: rotate(0deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(2) .chip {
+    transform: rotate(-45deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(3) .chip {
+    transform: rotate(-90deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(4) .chip {
+    transform: rotate(-135deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003348;
+    }
+}
+.chips-menu .menu-item:nth-child(5) .chip {
+    transform: rotate(-180deg);
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003353;
+    }
+}
+.chips-menu .menu-item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003360;
+    }
+}
+.chips-menu .menu-item .chip {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: 0.2rem dashed rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    position: inherit;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003367;
+    }
+}
+.chips-menu .menu-item .chip .value {
+    width: 26.6666666667px;
+    height: 26.6666666667px;
+    border: 1px dotted white;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003371;
+    }
+}
+.chips-menu .menu-item .chip .value .data-value {
+    width: 26.6666666667px;
+    height: 26.6666666667px;
+    font-size: 0.8333333333rem;
+    line-height: 23px;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003382;
+    }
+}
+.chips-menu .menu-item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/chips\.scss;
+    }
+    line {
+        font-family: \00003390;
+    }
+}
+.chips-menu .menu-item a:hover {
+    box-shadow: 0 0 0 0.6666666667px rgba(255, 255, 255, 0.3);
+}
+
+/*# sourceMappingURL=chips.css.map */
+
+/*Animation Set*/
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/anis\.scss;
+    }
+    line {
+        font-family: \000033;
+    }
+}
+.fade-in {
+    animation: up 0.5s ease-in;
+}
+
+@media -sass-debug-info {
+    filename {
+        font-family: file\:\/\/C\:\/Users\/wille\/OneDrive\/Escritorio\/casinosvn\/scss\/anis\.scss;
+    }
+    line {
+        font-family: \000037;
+    }
+}
+.zoom-in {
+    animation: zoom-in 0.5s ease-in;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translate(0, -2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*# sourceMappingURL=anis.css.map */
+
+/*reset css*/
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+ol[class],
+ul[class] {
+    padding: 0;
+}
+
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+ol[class],
+p,
+ul[class] {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ol[class],
+ul[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+article > * + * {
+    margin-top: 1em;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*sass variables */
+/*responsive variables */
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: #175355;
+    background: radial-gradient(ellipse at center, #175355 10%, #0a3139 70%);
+    font-weight: 300;
+}
+
+body div,
+body span,
+body p {
+    transition: all 0.25s ease;
+    color: #fff;
+}
+
+/* structure css */
+/*cols*/
+.col {
+    float: left;
+    position: relative;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-12 {
+    width: 12.5%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-33 {
+    width: 33.3%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-75 {
+    width: 75%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: block;
+    width: 100%;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/*floats*/
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+/*displays*/
+.d-none,
+.mobile {
+    display: none !important;
+}
+
+.desktop {
+    display: block !important;
+}
+
+@media only screen and (max-width: 960px) {
+    .mobile {
+        display: block !important;
+    }
+    .desktop {
+        display: none !important;
+    }
+}
+
+/*aligns*/
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+/*padding and margin*/
+.p-all {
+    padding: 1rem;
+}
+
+.p-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-y {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.m-y {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*font-color*/
+.text-base {
+    color: #fff;
+}
+
+.text-primary {
+    color: #3fe8d5;
+}
+
+.text-secondary {
+    color: #f49303;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+.full-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(../images/texture.png);
+    top: 0;
+    left: 0;
+}
+.full-container .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.full-container .login .login-form {
+    width: 250px;
+    height: 400px;
+}
+.full-container .login .login-form input,
+.full-container .login .login-form textarea {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.full-container .login .login-form label.checker {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.full-container .login .login-form label.checker input {
+    display: none;
+}
+.full-container .login .login-form label.checker .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.full-container .login .login-form label.checker .checkmark:after {
+    font-family: "mycasino";
+    content: "\e808";
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+}
+.full-container .login .login-form label.checker .checkmark-label {
+    padding-left: 30px;
+}
+.full-container .login .login-form label.checker input:checked ~ .checkmark {
+    background: #f49303;
+}
+.full-container .login .login-form label.checker input:checked ~ .checkmark:after {
+    font-family: "mycasino";
+    content: "\e805";
+    color: #fff;
+}
+.full-container .login .login-form .submit {
+    background: #f49303;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.full-container .login hr {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+input .full-container .login label {
+    float: left;
+}
+
+.hide-default {
+    display: none;
+}
+
+.error-msg {
+    color: gold;
+}
+
+.select-type {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.pairBanker {
+    left: -3px !important;
+    background: #b31d1d !important;
+}
+
+.text-title {
+    height: 100%;
+    padding-top: 34%;
+}
+
+.text-insufficient {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .alert-money {
+    bottom: -55%;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+
+.disabledbutton {
+    pointer-events: none !important;
+    opacity: 0.4;
+}
+
+.tooltip:hover .panda-number-chips {
+    visibility: visible;
+}
+
+.tooltip:hover .player-number-chips {
+    visibility: visible;
+}
+
+.tooltip:hover .tie-number-chips {
+    visibility: visible;
+}
+
+.tooltip:hover .bank-number-chips {
+    visibility: visible;
+}
+
+.tooltip:hover .dragon-number-chips {
+    visibility: visible;
+}
+
+.text-remove:hover {
+    background-color: darkgrey !important;
+    opacity: 0.9;
+}
+
+li.last-dropdown.padding-bottom,
+li.last-dropdown.padding-bottom::after,
+li.last-dropdown .dropdown.padding-bottom {
+    padding-bottom: 50px !important;
+}
+
+.full-container .game-container .player-choose .bank .text-remove,
+.full-container .game-container .player-choose .tie .text-remove,
+.full-container .game-container .player-choose .player .text-remove {
+    right: 0;
+    text-transform: uppercase;
+}
+
+.full-container .game-container .player-choose .jackpot .text-remove {
+    text-transform: uppercase;
+}
+
+.full-container .game-container .player-choose .bank .text-insufficient,
+.full-container .game-container .player-choose .tie .text-insufficient,
+.full-container .game-container .player-choose .player .text-insufficient {
+    top: auto;
+    bottom: -10px;
+}
+
+.modal-content-login {
+    background: white;
+    color: black;
+}
+
+.colorBlackText {
+    color: black;
+}
+
+#myModalLogin {
+    display: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.width-real-cool {
+    width: 15% !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .rules-modal-inner .row {
+        padding-bottom: 100px;
+    }
+}
+
+.error-template {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.error-template a {
+    border: 1px solid;
+    width: auto;
+    padding: 5px 20px;
+    margin: 20px;
+    display: inline-block;
+    background-color: #428bca;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+}

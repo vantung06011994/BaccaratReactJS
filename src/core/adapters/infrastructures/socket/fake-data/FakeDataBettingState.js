@@ -1,0 +1,116 @@
+export const fakedatabettingstate = [
+    {
+        game: {
+            gameId: 1026946,
+            result: -2,
+            gameIdEncode: "BWAOKS",
+            deckHistory: "1111111",
+            deckHistory2:
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|" +
+                "0-8-0-1|1-9-0-1|1-9-1-1|1-8-0-1|2-9-1-1|0-8-0-0|0-8-0-1|1-8-0-1|2-8-0-1|1-8-0-0|0-6-0-1|",
+            time: 2,
+            status: 0,
+        },
+        newName: "1-Fabiola",
+        numOfPlayers: 3,
+        userSession: {
+            minSide: 1,
+            maxTie: 60,
+            maxBet: 300,
+            minBet: 5,
+            minTie: 1,
+            userName: "ptest1",
+            bankerSide: 30,
+            sid: "X9RZBzxqA4oY0NuiueHoMzLlGPqnNK",
+            tie: 8,
+            playerSide: 20,
+            balance: 49965,
+            maxSide: 30,
+            commission: 5,
+        },
+        text: 100,
+        gameSession: {
+            bets: {
+                bet: [
+                    { result: -2, amount: 5, betOn: 2, diff: 0, type: "real", username: "ptest1" },
+                    { result: -2, amount: 5, betOn: 1, diff: 0, type: "real", username: "ptest1" },
+                    { result: -2, amount: 5, betOn: 0, diff: 0, type: "real", username: "ptest1" },
+                    { result: -2, amount: 5, betOn: 3, diff: 0, type: "real", username: "ptest1" },
+                    { result: -2, amount: 5, betOn: 4, diff: 0, type: "real", username: "ptest1" },
+                ],
+            },
+        },
+    },
+    {
+        messageType: "INFO",
+        responseTime: 1599713984109,
+        action: "jokerReached",
+        userSession: {
+            minSide: 1,
+            maxTie: 60,
+            maxBet: 300,
+            minBet: 5,
+            minTie: 1,
+            userName: "ctest12",
+            bankerSide: 30,
+            sid: "doqghETAX45v6zzZNdmCaFjuoBf3Bg",
+            tie: 8,
+            playerSide: 20,
+            balance: 1507.55,
+            maxSide: 30,
+            commission: 5,
+        },
+        text: 100,
+        responseStatus: "OK",
+        processTime: 14.815,
+    },
+    {
+        messageType: "INFO",
+        responseTime: 1599714084175,
+        action: "chat",
+        userSession: {
+            minSide: 1,
+            maxTie: 60,
+            maxBet: 300,
+            minBet: 5,
+            minTie: 1,
+            userName: "ctest14",
+            bankerSide: 30,
+            sid: "1I30CmR1GmHo68578SSsXbaa2JBV3X",
+            tie: 8,
+            playerSide: 20,
+            balance: 1000,
+            maxSide: 30,
+            commission: 5,
+        },
+        text: 100,
+        responseStatus: "OK",
+        message: "*DEALER*CARD_SHUFFLING",
+        processTime: 41.866,
+    },
+    {
+        action: "kick",
+        userSession: {
+            minSide: 1,
+            maxTie: 60,
+            maxBet: 300,
+            minBet: 5,
+            minTie: 1,
+            userName: "ctest11",
+            bankerSide: 30,
+            sid: "yXMadHsXKimMFQzldL7Dfw6iKPeQCK",
+            tie: 8,
+            playerSide: 20,
+            balance: 1565,
+            maxSide: 30,
+            commission: 5,
+        },
+        text: 100,
+    },
+];

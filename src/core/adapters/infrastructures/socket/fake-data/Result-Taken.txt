@@ -1,0 +1,8 @@
+MESSAGE
+destination:/bettor/4aKBea7hNHTGWCTksWNyHAAiZY3EPd
+content-type:text/plain;charset=UTF-8
+subscription:sub-0
+message-id:dc64224e-fc76-9207-62bb-0e53bfc3b532-128362
+content-length:1126
+
+{"game":{"gameId":1025334,"result":0,"playerSide":false,"gameIdEncode":"BV9FSA","deckHistory":"2212122122221111022222120122100022222201122110","time":-1,"banker":{"Card":[{"face":"D","value":7},{"face":"S","value":6},{"face":"D","value":4}]},"bankerSide":false,"player":{"Card":[{"face":"S","value":4},{"face":"C","value":3}]},"status":2},"newName":"10-Kathia","numOfPlayers":2,"action":"result","userSession":{"minSide":1,"maxTie":60,"maxBet":300,"minBet":5,"minTie":1,"userName":"ptest1","bankerSide":30,"sid":"4aKBea7hNHTGWCTksWNyHAAiZY3EPd","tie":8,"playerSide":20,"balance":1838.7,"maxSide":30,"commission":5},"text":100,"gameSession":{"bets":{"bet":[{"result":-2,"amount":5,"betOn":2,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":1,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":0,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":3,"diff":0,"type":"fun","username":"ptest1"},{"result":-2,"amount":5,"betOn":4,"diff":0,"type":"fun","username":"ptest1"}]},"finalResult":{"lost":10,"won":40,"totalBet":25,"commission":0,"totalEarning":30}}}

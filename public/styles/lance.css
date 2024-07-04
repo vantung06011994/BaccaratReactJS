@@ -1,0 +1,340 @@
+.full-container .game-container .player-choose .jackpot-help {
+    right: -40px;
+}
+.full-container .game-container .player-choose .jackpot-help.right {
+    left: -40px;
+}
+.full-container .top-menu .menu-panel {
+    z-index: 9999;
+}
+.full-container .game-container .player-choose .jackpot-help .btn {
+    height: 40px;
+    width: 40px;
+    display: block;
+}
+.full-container .game-container .player-choose .bank,
+.full-container .game-container .player-choose .tie,
+.full-container .game-container .player-choose .player,
+.full-container .game-container .player-choose .bank:before,
+.full-container .game-container .player-choose .tie:before,
+.full-container .game-container .player-choose .player:before {
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 100%;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 100%;
+    /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 100%;
+}
+
+#btn-scoreboard {
+    z-index: 8999;
+}
+.scoreboard {
+    z-index: 9000;
+    position: relative;
+}
+.full-container .video .dealer {
+    z-index: 999;
+}
+.auto-bet {
+    right: 10px;
+    bottom: 10px;
+}
+.full-container .cards.row,
+.full-container .game-container .chips.desktop-chip {
+    margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 320px) {
+    .full-container .game-container .player-choose {
+        max-width: 560px;
+    }
+    .full-container .game-container {
+        bottom: 65px;
+    }
+    .chips-menu.mobile {
+        bottom: 160px;
+        width: auto;
+        left: calc(50% - 18px);
+    }
+    .full-container .cards.row {
+        position: absolute;
+        bottom: 103px;
+    }
+    .full-container .text-alerts {
+        top: auto;
+        bottom: 103px;
+    }
+    .full-container .text-alerts.success h2 {
+        font-size: 1rem;
+    }
+    .full-container .game-container .player-choose .bank .d-text,
+    .full-container .game-container .player-choose .tie .d-text,
+    .full-container .game-container .player-choose .player .d-text {
+        font-size: 1.5rem;
+    }
+    .d-text.win-display {
+        left: -29px;
+        bottom: -25px;
+    }
+    .tie .d-text.win-display {
+        left: -7px;
+    }
+    .full-container .game-container .player-choose .jackpot .text-remove,
+    .full-container .game-container .player-choose .bank .text-remove,
+    .full-container .game-container .player-choose .tie .text-remove,
+    .full-container .game-container .player-choose .player .text-remove {
+        padding: 2px 8px;
+        font-size: 0.8rem;
+        bottom: 30px;
+    }
+    .scoreboard ul.score-totals {
+        padding: 0.5rem 0;
+        justify-content: space-between;
+    }
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 80px;
+        height: 80px;
+    }
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 561px) {
+    .full-container .cards.row,
+    .full-container .text-alerts {
+        bottom: 140px;
+    }
+    .d-text.win-display {
+        left: -22px;
+    }
+    .tie .d-text.win-display {
+        left: -3px;
+    }
+    .full-container .action-btn {
+        right: 30px;
+    }
+    .full-container .action-rebet {
+        right: 30px;
+        top: auto;
+        bottom: 110px;
+    }
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 90px;
+        height: 90px;
+    }
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 70px;
+        height: 70px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .full-container .game-container .player-choose {
+        max-width: 700px;
+    }
+    .full-container .game-container .player-choose .bank .d-text,
+    .full-container .game-container .player-choose .tie .d-text,
+    .full-container .game-container .player-choose .player .d-text {
+        font-size: 1.8rem;
+    }
+    .d-text.win-display {
+        left: -33px;
+    }
+    .tie .d-text.win-display {
+        left: -8px;
+    }
+    .chips-menu.mobile {
+        bottom: 206px;
+    }
+    .full-container .cards.row {
+        bottom: 180px;
+    }
+    .full-container .text-alerts {
+        bottom: 170px;
+    }
+    .full-container .text-alerts .d-text {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .chips-menu.mobile .menu-item,
+    .chips-menu.mobile .menu-item .chip {
+        width: 50px;
+        height: 50px;
+    }
+    .chips-menu.mobile .menu-item .chip .value {
+        width: 2em;
+        height: 2em;
+    }
+    .chips-menu.mobile .menu-item .chip .value .data-value {
+        width: 100%;
+        height: 100%;
+    }
+    .full-container .game-container .player-choose .jackpot-left {
+        right: 13%;
+    }
+    .full-container .game-container .player-choose .jackpot-right {
+        left: 13%;
+    }
+}
+@media only screen and (min-width: 961px) {
+    .full-container .game-container .player-choose .bank .d-text,
+    .full-container .game-container .player-choose .tie .d-text,
+    .full-container .game-container .player-choose .player .d-text {
+        font-size: 2rem;
+    }
+    .d-text.win-display {
+        left: -34px;
+    }
+    .tie .d-text.win-display {
+        left: -6px;
+    }
+    .full-container .game-container {
+        bottom: 30px;
+    }
+    .scoreboard ul.score-totals {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .scoreboard ul.score-totals li {
+        flex-grow: 1;
+        width: 33%;
+        margin-bottom: 0.5rem !important;
+    }
+    .full-container .action-btn {
+        width: 110px;
+        height: 110px;
+        bottom: 0px;
+        right: 65px;
+        font-size: 1.5rem;
+    }
+    .full-container .action-rebet {
+        width: 70px;
+        height: 70px;
+        bottom: 0px;
+        right: 180px;
+    }
+    .full-container .game-container .chips.desktop-chip {
+        position: absolute;
+        width: 100%;
+        bottom: 180px;
+    }
+    .full-container .cards.row {
+        bottom: 180px;
+    }
+    .full-container .text-alerts {
+        bottom: 170px;
+    }
+    .full-container .game-container .player-choose .jackpot .text-remove,
+    .full-container .game-container .player-choose .bank .text-remove,
+    .full-container .game-container .player-choose .tie .text-remove,
+    .full-container .game-container .player-choose .player .text-remove {
+        padding: 3px 10px;
+        font-size: 1rem;
+        bottom: 45px;
+    }
+    .box.summary .box-body {
+        padding: 0px;
+    }
+    .full-container .box ul li span.text-secondary {
+        width: 17px;
+        margin-left: 5px;
+    }
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 100px;
+        height: 100px;
+    }
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media only screen and (min-width: 1441px) {
+    .full-container .game-container .player-choose .bank .d-text,
+    .full-container .game-container .player-choose .tie .d-text,
+    .full-container .game-container .player-choose .player .d-text {
+        font-size: 2.5rem;
+    }
+    .d-text.win-display {
+        left: -51px;
+        bottom: -17px;
+    }
+    .tie .d-text.win-display {
+        left: -12px;
+    }
+    .scoreboard ul.score-totals li {
+        flex-grow: 1;
+        width: 1%;
+        margin-bottom: 0.5rem !important;
+    }
+    .full-container .game-container {
+        bottom: 30px;
+    }
+    .full-container .game-container .player-choose {
+        max-width: 950px;
+    }
+    .full-container .action-btn {
+        width: 140px;
+        height: 140px;
+        bottom: 0px;
+        right: 100px;
+    }
+    .full-container .action-rebet {
+        width: 80px;
+        height: 80px;
+        bottom: 0px;
+        right: 260px;
+    }
+    .full-container .game-container .chips.desktop-chip,
+    .full-container .cards.row,
+    .full-container .text-alerts {
+        bottom: 180px;
+    }
+    .full-container .text-alerts .d-text {
+        font-size: 5rem;
+    }
+    .full-container .game-container .player-choose .jackpot .text-remove,
+    .full-container .game-container .player-choose .bank .text-remove,
+    .full-container .game-container .player-choose .tie .text-remove,
+    .full-container .game-container .player-choose .player .text-remove {
+        padding: 4px 12px;
+        font-size: 1rem;
+        bottom: 52px;
+    }
+    .video-container {
+        text-align: center;
+    }
+    .video-container canvas {
+        max-width: 600px !important;
+    }
+    .full-container .game-container .player-choose .bank:before,
+    .full-container .game-container .player-choose .tie:before,
+    .full-container .game-container .player-choose .player:before {
+        width: 120px;
+        height: 120px;
+    }
+    .full-container .game-container .player-choose .bank,
+    .full-container .game-container .player-choose .tie,
+    .full-container .game-container .player-choose .player {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media only screen and (min-width: 1601px) {
+    .video-container canvas {
+        max-width: 100% !important;
+    }
+}

@@ -1,0 +1,18 @@
+import * as React from "react";
+
+// import socketAPI from "../core/adapters/infrastructures/SocketManager";
+
+//import stompClient from "./../ws-socket/index";
+
+export default function ChatPage(): JSX.Element {
+    React.useEffect(() => {
+        // console.log("stompClient", stompClient);
+        // stompClient.connect({}, () => {
+        //     console.log("ChatPage connect success");
+        // });
+        // socketAPI.connect("tokenaa", "channel123").then((result) => {
+        //     console.log("socketAPI connect success");
+        // });
+    }, []);
+    return <h1>hello chat page 2224545</h1>;
+}

@@ -1,0 +1,10 @@
+-Socket lifecycle dependencies by msg Header:
+[CONNECT,DISCONNECT,CONNECTED,SUBSCRIBE]
+
+
+Message body lifecycle dependencies by {"messageType":any}
+[undefined,messageType]
+
+Game lifecycle dependencies by {"action":any}
+    -game process lifecycle dependencies by {"game":{"result":number,"status":number,"time":number}}
+        Note:"time" < 0 = "--"    
